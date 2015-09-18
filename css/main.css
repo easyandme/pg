@@ -88,8 +88,19 @@ header {
 	align-items: center;
 	height: 100%;
     width: 100%;
-    background-color: #e2284e; 
+    background-color: #e53659; 
+    flex-flow: column;
+    -ms-flex-flow: column;
+    -webkit-flex-flow: column;
 } 
+img.iconarrow {
+    width: 50px;
+    margin-top: -60px;
+    transform: translate(-30px, 35px);
+    position: relative;
+    z-index: 999;
+    -webkit-transform: translate(-30px,35px);
+}
 .mock {
     width: 300px;
     background: url(../assets/iphone_blank_large.png) center center no-repeat;
@@ -223,7 +234,7 @@ form[name="presignup"] {
     font-weight: bold;
     float: right;
     z-index: 100;
-    background-color: #21B673;
+    background-color: #1dc479;
     height: 38px;
     line-height: 36px;
     box-shadow: 0 0 0 1px #fff;
@@ -232,6 +243,14 @@ form[name="presignup"] {
     border: 0px;
     border-radius: 0 1px 1px 0;
     font-family: ralewaymedium;
+}
+img.phone_mockup {
+    width: 320px;
+    position: absolute;
+    left: 50%;
+    margin-left: -160px;
+    margin-top: -14px;
+    z-index: 0;
 }
 input.email {
     position: relative;
@@ -297,8 +316,9 @@ a.btn:hover::after{ left: 0px;}
   z-index: -9;
 }
 .subs {
-	width: 380px;
+	width: 415px;
     position: relative;
+    z-index: 0;
     margin: 0 auto;
     display: flex;
 	display: -ms-flexbox;
@@ -393,11 +413,13 @@ a.btn:hover::after{ left: 0px;}
     margin-top: 24px;
 }
 .subs p:nth-child(1) {    
-    width: 120%;
-    color: rgba(255,255,255,.7);
+    width: 430px;
+    color: rgba(255,255,255,1);
     font-size: 16px;
     font-family: ralewaymedium, raleway;
-    word-spacing: 2px;
+    word-spacing: 1px;
+    text-align: left;
+    line-height: 20px;
 }
 .subs p:last-child {
     font-family: myriad set pro, segoe ui, Raleway;
@@ -520,17 +542,25 @@ p.progressbar-text {
 .downBar {
 	position: absolute;
     bottom: 0;
-    height: 60px;
+    height: 70px;
     background-color: #fff;
     width: 100%;
 } 
 .triangle {
 	position: absolute;
     left: 50%;
-    top: 20px;
-    width: 36px;
+    top: 36px;
+    width: 34px;
     cursor: pointer; 
     margin-left: -18px;
+} 
+.huh {
+    position: absolute;
+    left: 50%;
+    transform: translate(-44%, -6px);
+    -webkit-transform: translate(-44%, -6px);
+    font-family: ralewayextrabold;
+    color: #bababa;
 }
 .skip {
 	position: absolute;
@@ -768,7 +798,7 @@ p.progressbar-text {
 	position: absolute;
 	width: 100%;
 	height: 360px;
-	background-color: #E4365A;
+	background-color: #e53659;
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;  
@@ -868,11 +898,7 @@ body {
     margin-left: 0;
     margin-top: 0;
 }
-.content {	
-	flex-flow: column;
-	-ms-flex-flow: column;
-	-webkit-flex-flow: column;
-    height: 100%;
+#placeholder {
 }
 .disclaimer p {
 	width: auto;

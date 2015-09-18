@@ -27,12 +27,21 @@ videoPlayed = 1;
 } else {window.location.reload()} 
 });
 
+      var x = 0;
 $(window).scroll(function() {  
 			if ($(this).scrollTop() > 50 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
 				$('.container').fadeIn();
 			} else {
 				$('.container').fadeOut();
-			}
+			};
+      if ($(this).scrollTop() >= 200) {
+        $('.phone_mockup').addClass('animated slideOutDown');
+        x = 1;
+      } 
+      if (x == 1 && $(this).scrollTop() < 200) {
+        $('.phone_mockup').removeClass('animated slideOutDown').addClass('animated slideInUp');
+        x = 0;
+      }
 });
 var i = 1;
 window.setInterval(function() {
@@ -52,7 +61,7 @@ $('#email').focus(function() {
    $('#submit').css({'background-color':'#21B673', 'opacity':'1'});
  });
 $('#email').on('keydown', function() {
-   $('#submit').css({'background-color':'#21B673', 'opacity':'.5'});
+   $('#submit').css({'background-color':'#21B673', 'opacity':'.7'});
 });
 $('#submit').mouseover(function() {
    $('#submit').css({'background-color':'#E4365A', 'opacity':'1'});
@@ -67,7 +76,7 @@ $('#email2').focus(function() {
    $('#submit2').css({'background-color':'#21B673', 'opacity':'1'});
  });
 $('#email2').on('keydown', function() {
-   $('#submit2').css({'background-color':'#20d383', 'opacity':'1'});
+   $('#submit2').css({'background-color':'#21B673', 'opacity':'7'});
 });
 $('#submit2').mouseover(function() {
    $('#submit2').css({'background-color':'#E4365A', 'opacity':'1'});
@@ -85,9 +94,9 @@ $('.triangle').click(function() {
 setInterval(function(){
 $('.triangle').toggleClass('animated bounce');
 }, 5000);
-setTimeout(function(){
+/* setTimeout(function(){
 $('.subs>p').addClass('animated shimmer');
-}, 2500);
+}, 2500);  */
 
 
 $('.skip').fadeIn(5000);
