@@ -237,9 +237,9 @@ form[name="presignup"] {
     background-color: #1dc479;
     height: 38px;
     line-height: 36px;
-    box-shadow: 0 0 0 1px #fff;
+    box-shadow: 0 0 0 2px #fff;
     font-size: 16px;
-    margin-top: 1px;
+    margin-top: 2px;
     border: 0px;
     border-radius: 0 1px 1px 0;
     font-family: ralewaymedium;
@@ -254,7 +254,7 @@ img.phone_mockup {
 }
 input.email {
     position: relative;
-    border: 1px solid rgba(255,255,255,.5);
+    border: 2px solid rgba(255,255,255,.5);
     padding: 5px 0px 5px 0px;
     text-decoration: none;
     letter-spacing: 1px;
@@ -278,7 +278,7 @@ input.email:focus {
 	outline: 0;
 }
 input.email:active {
-	border: 1px solid #fff;
+	border: 2px solid #fff;
 }
 input#submit:hover, input#submit2:hover {
 	background-color: #E4365A;
@@ -419,7 +419,7 @@ a.btn:hover::after{ left: 0px;}
     font-family: ralewaymedium, raleway;
     word-spacing: 1px;
     text-align: left;
-    line-height: 20px;
+    line-height: 30px;
 }
 .subs p:last-child {
     font-family: myriad set pro, segoe ui, Raleway;
