@@ -249,7 +249,7 @@ img.phone_mockup {
     position: absolute;
     left: 50%;
     margin-left: -200px;
-    margin-top: -35px;
+    margin-top: -15px;
     z-index: 0;
 }
 input.email {
