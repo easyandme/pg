@@ -245,10 +245,10 @@ form[name="presignup"] {
     font-family: ralewaymedium;
 }
 img.phone_mockup {
-    width: 420px;
+    width: 470px;
     position: absolute;
     left: 50%;
-    margin-left: -200px;
+    margin-left: -225px;
     margin-top: -15px;
     z-index: 0;
 }
@@ -419,7 +419,7 @@ a.btn:hover::after{ left: 0px;}
     font-family: ralewaymedium, raleway;
     word-spacing: 1px;
     text-align: left;
-    line-height: 30px;
+    line-height: 25px;
 }
 .subs p:last-child {
     font-family: myriad set pro, segoe ui, Raleway;
