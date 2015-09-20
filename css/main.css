@@ -732,6 +732,7 @@ p.progressbar-text {
     -webkit-transform: translateX(-50%);
     font-size: 21px;
     font-family: ralewaymedium;
+    text-align: center;
 }
 .introShow { 
 	height: 500px; 
