@@ -879,6 +879,9 @@ a.btn[href="#wide"] {
 
 /* responsive */ 
 @media only screen and (max-width: 840px) { 
+.content {
+    height: 120vh;
+}
 .disclaimer { 
     margin-left: 0;
 }
@@ -972,11 +975,14 @@ h2 {
     -webkit-transform: translateY(180px);
     width: 280px;
 }
+.content {
+    height: 600px;
+}
 .content div:nth-child(1) {
     margin-top: -200px;
 }
 #placeholder {
-    font-size: 28px;
+    font-size: 25px;
     padding: 0 20px 0 20px;
 }
 .iconarrow {
@@ -1076,8 +1082,11 @@ header {
 .subs p:nth-child(1) {
     color: #e53659;
     font-size: 14px;
-    width: 301px;
-    margin-left: 10%;
+    width: 280px;
+    margin-left: 50%;
+    word-spacing: 0;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
 }
 input.email {
     border: 2px solid #1dc479;
