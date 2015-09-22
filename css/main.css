@@ -421,6 +421,10 @@ a.btn:hover::after{ left: 0px;}
     text-align: left;
     line-height: 25px;
 }
+#bp {   
+    text-align: center;
+    width: 100%;
+}
 .subs p:last-child {
     font-family: myriad set pro, segoe ui, Raleway;
 	text-align: center;
@@ -871,7 +875,7 @@ a.btn[href="#wide"] {
     left: 10%;
     color: #fff;
  }
-#placeholder {color: #fff;font-family: ralewayextrabold;font-size: 31px;-webkit-transform: translateY(-30px);transform: translateY(-30px);
+#placeholder {color: #fff;font-family: ralewayextrabold;font-size: 31px;-webkit-transform: translateY(-20px);transform: translateY(-20px);
 }
 .content div:nth-child(1) {
     margin-top: -200px;
@@ -1088,6 +1092,9 @@ header {
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
 }
+#bp {
+    width: 280px;
+}
 input.email {
     border: 2px solid #1dc479;
     box-shadow: 0 0 0 0 #1dc479;
@@ -1161,7 +1168,7 @@ form {
     margin-left: -25px;
 }
 .intros:nth-child(3) > h2 {
-    margin-top: 0;
+    margin-top: -10px;
 }
 .intros:nth-child(3) > h2::before {
     position: absolute;
