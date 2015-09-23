@@ -884,7 +884,7 @@ a.btn[href="#wide"] {
 /* responsive */ 
 @media only screen and (max-width: 840px) { 
 .content {
-    height: 120vh;
+    height: 600px;
 }
 .disclaimer { 
     margin-left: 0;
@@ -901,6 +901,9 @@ a.btn[href="#wide"] {
     -webkit-order: 1;
     -ms-order: 1;
     margin-top: 0px;
+}
+.downBar {
+    display: none;
 }
 .mock {
 	-webkit-order: 2;
@@ -978,10 +981,7 @@ h2 {
     transform: translateY(180px);
     -webkit-transform: translateY(180px);
     width: 280px;
-}
-.content {
-    height: 600px;
-}
+} 
 .content div:nth-child(1) {
     margin-top: -200px;
 }
@@ -1023,10 +1023,7 @@ img.phone_mockup {
 }
 .intros:nth-child(1) {
 	display: none;
-}
-.downBar {
-	display: none;
-}
+} 
 .logoContainer { 
 	flex-flow: column;
 	-ms-flex-flow: column;

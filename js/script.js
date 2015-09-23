@@ -27,7 +27,7 @@ videoPlayed = 1;
 } else {window.location.reload()} 
 });
 
-if( screen.width > 480 ) {
+if( screen.width > 800 ) {
       var x = 0;
 $(window).scroll(function() {  
 			if ($(this).scrollTop() > 50 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
