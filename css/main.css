@@ -43,7 +43,7 @@ html {overflow-x: hidden; height: 100%}
 body { height: 100%; width: 100%; position: absolute; padding: 0px; font-size:1em; font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 18px; background-color: #fff; }
  
 a{text-decoration: none !important;color: #fff;}
-h2 { font-size: 24px; font-family: ralewaybold, raleway; margin-left: 42px;}
+h2 { font-size: 24px; font-family: ralewaybold, raleway;}
 a.btn {
 	cursor: pointer;
 }
@@ -96,10 +96,10 @@ header {
 img.iconarrow {
     width: 50px;
     margin-top: -60px;
-    transform: translate(-30px, 35px);
+    transform: translate(-30px, 38px);
     position: relative;
     z-index: 999;
-    -webkit-transform: translate(-30px,35px);
+    -webkit-transform: translate(-30px,38px);
 }
 .mock {
     width: 300px;
@@ -148,6 +148,9 @@ img.iconarrow {
 	line-height: 2.5em; 
 	opacity: .9;
 	font-size: 20px;
+}
+.alr {
+    margin-left: 42px;
 }
 .navs_b:hover {
 	opacity: 1;
@@ -216,7 +219,7 @@ a.btn:hover{
 form[name="presignup"] {
 	display: flex;
 	display: -ms-flexbox;
-	display: -webkit-flex;
+	display: -webkit-flex; 
 }
 .email:hover {
 	color: #000;
@@ -263,12 +266,19 @@ input.email {
     background: #fff;
     height: 28px;
     color: #E2284E;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     text-align: center;
     border-radius: 1px 0 0 1px;
     box-shadow: 0 0 1px 0 #fff;
     font-family: ralewaymedium, raleway;
+}
+#email2 {
+    width: 273px;
+    margin-left: 22px;
+}
+#submit2 {
+    margin-right: 25px;
 }
 input.email:hover { 
 	color: #000;
@@ -546,14 +556,14 @@ p.progressbar-text {
 .downBar {
 	position: absolute;
     bottom: 0;
-    height: 70px;
+    height: 84px;
     background-color: #fff;
     width: 100%;
 } 
 .triangle {
 	position: absolute;
     left: 50%;
-    top: 36px;
+    top: 44px;
     width: 34px;
     cursor: pointer; 
     margin-left: -18px;
@@ -561,8 +571,8 @@ p.progressbar-text {
 .huh {
     position: absolute;
     left: 50%;
-    transform: translate(-44%, -6px);
-    -webkit-transform: translate(-44%, -6px);
+    transform: translate(-44%, 0px);
+    -webkit-transform: translate(-44%, 0px);
     font-family: ralewayextrabold;
     color: #bababa;
 }
@@ -784,7 +794,7 @@ p.progressbar-text {
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-.intro_text h4 {
+.intro_text h2 {
 	color: #E4365A;
     text-align: left;
     font-size: 30px;
@@ -824,6 +834,9 @@ p.progressbar-text {
     font-size: 30px;
     margin-top: 20px;
     font-family: ralewayextrabold, raleway;
+}
+#submit { 
+    width: 87px;
 }
 .blur_bottom { 
     height: 40%;
@@ -886,11 +899,16 @@ a.btn[href="#wide"] {
 .content {
     height: 600px;
 }
+.alr {
+    margin-left: 0;
+}
 .disclaimer { 
     margin-left: 0;
 }
 #placeholder {
     text-align: center;
+    width: 80%;
+    margin-left: 10%;
 }
 .subs p:nth-child(1) {  
     text-align: center;
@@ -986,8 +1004,10 @@ h2 {
     margin-top: -200px;
 }
 #placeholder {
-    font-size: 25px;
-    padding: 0 20px 0 20px;
+    font-size: 25px; 
+    width: 87%;
+    margin-left: 7%;
+    line-height: 1.3em;
 }
 .iconarrow {
     visibility: hidden;
@@ -1001,6 +1021,12 @@ img.phone_mockup {
 #submit, #submit2 {
     font-size: 13px;
     box-shadow: 0 0 0 2px #1dc479;
+}
+#submit2 {
+    margin-right: 0;
+}
+#email2 {
+    margin-left: 0;
 }
 .oct {
     display: none;
@@ -1029,7 +1055,7 @@ img.phone_mockup {
 	-ms-flex-flow: column;
 	-webkit-flex-flow: column;
 }
-.intro_text h4 { 
+.intro_text h2 { 
     text-align: center;
     font-size: 20px; 
     width: 100%;
@@ -1116,7 +1142,10 @@ input.email {
 form { 
     width: 80%;
     margin-left: 10%;
-    margin-top: -70px;
+    margin-top: -70px;  
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
 }
 #form1 {
     margin-top: -100px;
