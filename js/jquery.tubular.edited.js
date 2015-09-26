@@ -7,7 +7,7 @@
     // defaults
     var defaults = {
         ratio: 87/40, // usually either 4/3 or 16/9 -- tweak as needed
-        videoId: 'B6jCMaiTqG0', 
+        videoId: 'SOhzwtbazRI', 
         mute: false,
         repeat: true,
         width: $(window).width(),

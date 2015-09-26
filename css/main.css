@@ -96,10 +96,10 @@ header {
 img.iconarrow {
     width: 50px;
     margin-top: -60px;
-    transform: translate(-30px, 38px);
+    transform: translate(-30px, 37px);
     position: relative;
     z-index: 999;
-    -webkit-transform: translate(-30px,38px);
+    -webkit-transform: translate(-30px,37px);
 }
 .mock {
     width: 300px;
@@ -895,6 +895,13 @@ a.btn[href="#wide"] {
 }
 
 /* responsive */ 
+@media only screen and (max-width: 1080px) {
+#placeholder {   
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+}
+}
 @media only screen and (max-width: 840px) { 
 .content {
     height: 600px;
