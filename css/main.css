@@ -228,12 +228,12 @@ a.btn {
 	letter-spacing: 1px;
 	margin: 0px 0px 10px 0px;
 	color: #fff;
-	width: 155px;
+	width: 135px;
 	transition: background-color, .5s;
 	position: relative;
 	overflow: hidden;
 	background-color: #e2284e;
-    font-size: 16px;
+    font-size: 15px;
 }
 a.btn:hover{ 
 	background-color: #F15273; 
@@ -497,28 +497,54 @@ a.btn:hover::after{ left: 0px;}
 .animatedSlow{-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 .animatedFast{-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 
-div.qframe { 
-	visibility: hidden;
-    -webkit-transform: scale(0.75) translateX(-67%);
-     -moz-transform: scale(0.75) translateX(-67%); 
-      -ms-transform: scale(0.75) translateX(-67%); 
-       -o-transform: scale(0.75) translateX(-67%); 
-          transform: scale(0.75) translateX(-67%);
+div.qframe {  
+    -webkit-transform: scale(0.67) translateX(-74%);
+     -moz-transform: scale(0.67) translateX(-74%); 
+      -ms-transform: scale(0.67) translateX(-74%); 
+       -o-transform: scale(0.67) translateX(-74%); 
+          transform: scale(0.67) translateX(-74%);
     -webkit-transition:1s ease;
     -moz-transition:1s ease;
     -o-transition:1s ease;
     -ms-transition:1s ease;
-    transition:1s ease;
-    content:url(../assets/iphone.png);
+    transition:1s ease;  
 }
-div.qframe:after {  
-    content:url(../assets/iphone.png);
+.intros:nth-child(4) {
+    margin-bottom: 0;  
+} 
+.guru {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width: 340px;
+}
+.stone {
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 100; 
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 1px solid #E6E6E6;
+}
+.stone2 {
+    height: 100px;
+    background-color: #fff;
+    position: relative;
+    z-index: 100; 
+    top: 0;
+    bottom: 0;
+    right: 100%; 
+    border-right: 1px solid #E6E6E6;
 }
 .clock {
 	position: relative;
     width: 75px; 
     margin-left: -36px; 
-    margin-top: -500px;
+    margin-top: -490px;
+    z-index: 100;
 }
 svg path {
     fill: black;
@@ -533,7 +559,7 @@ p.progressbar-text {
 	font-size: 28px;
     font-family: ralewayextrabold;
     -webkit-transform: translate(-40%, -42%);
-}
+} 
 .promo { 
 	position: relative;
     margin-top: -209px;
@@ -546,9 +572,9 @@ p.progressbar-text {
 	color: #fff;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
-	width: 210px;
+	width: 200px;
     margin-left: 10px;
-	margin-top: 50%;
+	margin-top: 48%;
     font-family: ralewaybold;
     line-height: 20px;
 }	
@@ -650,9 +676,11 @@ p.progressbar-text {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; 
+    z-index: 100;
 }
 .row {
 	width: auto;
+    z-index: 100;
 }
 .connect {
     content: "";
@@ -660,9 +688,8 @@ p.progressbar-text {
     top: 0;
     bottom: 0;
     left: 50%;
-    border-left: 1px solid #AAAB9D;
-    z-index: 5;
-    border-color: #E6E6E6;
+    border-left: 1px solid #E6E6E6;
+    z-index: 5; 
 }
 .intros {  
     border: 1px solid #C5C5C5; 
@@ -924,7 +951,7 @@ a.btn[href="#wide"] {
     left: 10%;
     color: #fff;
  }
-#placeholder {color: #fff;font-family: ralewayextrabold;font-size: 31px;-webkit-transform: translateY(-20px);transform: translateY(-20px);
+#placeholder {line-height: 1.5em; color: #fff;font-family: ralewayextrabold;font-size: 31px;-webkit-transform: translateY(-20px);transform: translateY(-20px);
 }
 .content div:nth-child(1) {
     margin-top: -200px;

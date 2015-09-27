@@ -106,7 +106,7 @@ trigerOnce = false;
 var answered = 0;
 
 setTimeout(function(){
-$('.play').css('visibility','visible').addClass('fadeIn animatedSlow');
+$('.play').css('visibility','visible').addClass('slideInUp animatedSlow');
 }, 4000);
 
 function sd() {
