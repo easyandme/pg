@@ -127,13 +127,7 @@ function vanish() {
     }
     $('.intros button + p').html('The sample video is embedded from YouTube. Click <a target="_blank" style="color:brown" href="https://www.youtube.com/watch?v=Vmb1tqYqyII">here</a> to see the full version.');
     $('.mask2').css('visibility','hidden'); 
-}
-
-function wrongAns() {
-    $('.tex p:nth-child(1)').text('Ouch!');
-    $('.tex p:nth-child(2)').text('You could use some practice.');
-    $('.tex').css('visibility','visible').addClass('fadeIn animatedSlow');
-}
+} 
 
 $('a.btn').click(function(){
 $(this).css({'color':'rgba(255, 255, 255, .35)','background-color':'rgba(226, 40, 78, 1);'});
@@ -142,9 +136,7 @@ if (this.id == 'correct') {
 }
 setTimeout(function(){
     sd(); 
-}, 500);
-setTimeout(function() {
-    $('.tex').fadeOut(500)}, 6500)
+}, 500); 
 });
 
 setTimeout(function(){
