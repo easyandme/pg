@@ -7,7 +7,7 @@
     // defaults
     var defaults = {
         ratio: 87/40, // usually either 4/3 or 16/9 -- tweak as needed
-        videoId: 'SOhzwtbazRI', 
+        videoId: 'Vmb1tqYqyII', 
         mute: false,
         repeat: true,
         width: $(window).width(),
@@ -18,8 +18,8 @@
         volumeUpClass: 'tubular-volume-up',
         volumeDownClass: 'tubular-volume-down',
         increaseVolumeBy: 0,
-        start: 102,
-        end: 116,
+        start: 123,
+        end: 142,
         minimumSupportedWidth: 600,
         modestbranding: 0
     };
@@ -86,7 +86,7 @@ var circle = new ProgressBar.Circle('#clock', {
     trailColor: "#000",
     strokeWidth: 4,
     trailWidth: 1,
-    duration: 6000,
+    duration: 7500,
     text: {
         value: '0'
     },
@@ -103,9 +103,11 @@ trigerOnce = false;
  
 }
 
+var answered = 0;
+
 setTimeout(function(){
 $('.play').css('visibility','visible').addClass('fadeIn animatedSlow');
-}, 1000);
+}, 4000);
 
 function sd() {
     $('.play').removeClass('fadeIn animatedSlow').fadeOut(300);
@@ -118,8 +120,12 @@ function vanish() {
     $('#pg-container, #pg-player, #tubular-shield').remove();
     $('body').css('overflow','visible');
     $('#player').remove();
-    $('.intros button').text('Reload to play again');
-    $('.intros button + p').html('The sample video is embedded from YouTube. Click <a target="_blank" style="color:brown" href="https://www.youtube.com/watch?v=B6jCMaiTqG0">here</a> to see the full version.');
+    if (answered == 1) {
+    $('.intros button').html('<p>Nice! We have just the thing for you</p>')
+    } else {
+    $('.intros button').html('<p>Ouch! Looks like you need some practice</p>')
+    }
+    $('.intros button + p').html('The sample video is embedded from YouTube. Click <a target="_blank" style="color:brown" href="https://www.youtube.com/watch?v=Vmb1tqYqyII">here</a> to see the full version.');
     $('.mask2').css('visibility','hidden'); 
 }
 
@@ -132,25 +138,19 @@ function wrongAns() {
 $('a.btn').click(function(){
 $(this).css({'color':'rgba(255, 255, 255, .35)','background-color':'rgba(226, 40, 78, 1);'});
 if (this.id == 'correct') {
-    setTimeout(function(){
-    sd();
-    $('.tex').css('visibility','visible').addClass('fadeIn animatedSlow');
-    }, 500);
-} else {
-    setTimeout(function(){
-    wrongAns();
-    sd();
-}, 500);
+    answered = 1;
 }
+setTimeout(function(){
+    sd(); 
+}, 500);
 setTimeout(function() {
     $('.tex').fadeOut(500)}, 6500)
 });
 
 setTimeout(function(){
-        sd();
-        if ($('.tex').css('visibility') !== 'visible') {wrongAns()}
-        setTimeout(vanish, 4500)
-    }, 12000)
+        sd(); 
+        setTimeout(vanish, 5000)
+    }, 15000)
             }
 }
 

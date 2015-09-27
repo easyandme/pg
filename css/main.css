@@ -169,8 +169,19 @@ img.iconarrow {
     top: 20px;
     margin-left: 10px;
 }
+#twitter:hover {
+    background: url(../assets/icon_twitter_color.png) center center no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 20px;
+    margin-left: 10px;
+    opacity: 1;
+}
 #fb {
-	background: url(../assets/icon_facebook.png) center center no-repeat;
+    background: url(../assets/icon_facebook.png) center center no-repeat;
     background-size: contain;
     width: 32px;
     height: 32px;
@@ -178,8 +189,28 @@ img.iconarrow {
     top: 20px;
     margin-left: 60px;
 }
+#fb:hover {
+    background: url(../assets/icon_fb_color.png) center center no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute; 
+    top: 20px;
+    margin-left: 60px;
+    opacity: 1;
+}
 #ins {
-	background: url(../assets/icon_insta.png) center center no-repeat;
+    background: url(../assets/icon_insta.png) center center no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 20px;
+    margin-left: 110px;
+}
+#ins:hover {
+    background: url(../assets/icon_insta_color.png) center center no-repeat;
     background-size: contain;
     width: 32px;
     height: 32px;
@@ -202,6 +233,7 @@ a.btn {
 	position: relative;
 	overflow: hidden;
 	background-color: #e2284e;
+    font-size: 16px;
 }
 a.btn:hover{ 
 	background-color: #F15273; 
@@ -514,7 +546,7 @@ p.progressbar-text {
 	color: #fff;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
-	width: 200px;
+	width: 210px;
     margin-left: 10px;
 	margin-top: 50%;
     font-family: ralewaybold;
@@ -721,6 +753,10 @@ p.progressbar-text {
     font-size: 30px;
     padding-left: 70px;
     font-family: ralewaybold, raleway;
+}
+.intros button p { 
+    width: 80%;
+    margin-left: 60px;
 }
 .intros button:before {
 	content: "";
