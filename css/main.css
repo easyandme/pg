@@ -1081,7 +1081,7 @@ h2 {
     margin-top: -200px;
 }
 #placeholder {
-    font-size: 25px; 
+    font-size: 23px; 
     width: 87%;
     margin-left: 7%;
     line-height: 1.3em;
@@ -1285,7 +1285,7 @@ form {
     margin-left: -25px;
 }
 } 
-@media only screen and (min-width: 375px) { 
+@media only screen and (min-width: 375px) and (max-width: 480px) { 
 #bp {
     width: 90%;
     margin-top: -5px;
