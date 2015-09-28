@@ -88,16 +88,16 @@ var circle = new ProgressBar.Circle('#clock', {
     trailWidth: 1,
     duration: 7500,
     text: {
-        value: '0'
+        value: '5'
     },
     step: function(state, bar) {
         bar.setText((bar.value() * 10).toFixed(0));
     }
 });
-
-circle.animate(1, function() {
-    circle.animate(0);
-})
+ 
+    circle.animate(1, function() {
+        circle.animate(0);
+    })  
 
 trigerOnce = false; 
  
