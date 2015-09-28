@@ -44,6 +44,8 @@ $(window).scroll(function() {
         x = 0;
       }
 });
+} else {
+  $('#submit,   #submit2').attr('value', 'join').css('width','57px');
 }
 var i = 1;
 window.setInterval(function() {
