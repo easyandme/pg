@@ -169,7 +169,7 @@ img.iconarrow {
     top: 20px;
     margin-left: 10px;
 }
-#twitter:hover {
+/* #twitter:hover {
     background: url(../assets/icon_twitter_color.png) center center no-repeat;
     background-size: contain;
     width: 32px;
@@ -179,7 +179,7 @@ img.iconarrow {
     top: 20px;
     margin-left: 10px;
     opacity: 1;
-}
+} */
 #fb {
     background: url(../assets/icon_facebook.png) center center no-repeat;
     background-size: contain;
@@ -189,7 +189,7 @@ img.iconarrow {
     top: 20px;
     margin-left: 60px;
 }
-#fb:hover {
+/* #fb:hover {
     background: url(../assets/icon_fb_color.png) center center no-repeat;
     background-size: contain;
     width: 32px;
@@ -198,7 +198,7 @@ img.iconarrow {
     top: 20px;
     margin-left: 60px;
     opacity: 1;
-}
+} */
 #ins {
     background: url(../assets/icon_insta.png) center center no-repeat;
     background-size: contain;
@@ -209,7 +209,7 @@ img.iconarrow {
     top: 20px;
     margin-left: 110px;
 }
-#ins:hover {
+/* #ins:hover {
     background: url(../assets/icon_insta_color.png) center center no-repeat;
     background-size: contain;
     width: 32px;
@@ -218,7 +218,7 @@ img.iconarrow {
     background-repeat: no-repeat;
     top: 20px;
     margin-left: 110px;
-}
+} */
 a.btn {
     font-family: ralewaymedium;
 	display: block; 
