@@ -512,13 +512,6 @@ div.qframe {
 .intros:nth-child(4) {
     margin-bottom: 0;  
 } 
-.guru {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    width: 340px;
-}
 .stone {
     height: 100px;
     background-color: #fff;
@@ -958,16 +951,27 @@ a.btn[href="#wide"] {
 }
 
 /* responsive */ 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1000px) {
 #placeholder {   
     text-align: center;
     width: 80%;
     margin-left: 10%;
+} 
+.guru {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    width: 100%;
+    margin-top: 1.3em;
 }
 }
 @media only screen and (max-width: 840px) { 
 .content {
     height: 600px;
+}
+.stone {
+    display: none;
 }
 .alr {
     margin-left: 0;
@@ -1070,6 +1074,9 @@ h2 {
     -webkit-transform: translateY(180px);
     width: 280px;
 } 
+.guru { 
+    position: static;
+}
 .content div:nth-child(1) {
     margin-top: -200px;
 }
@@ -1277,8 +1284,14 @@ form {
     -webkit-transform: none;
     margin-left: -25px;
 }
+} 
+@media only screen and (min-width: 414px) { 
+#bp {
+    width: 90%;
+    margin-top: -5px;
 }
- 
+}
+
 .shimmer {
   background: -webkit-gradient(linear,left top,right top,from(rgba(255,255,255,1)),to(rgba(255,255,255,1)),color-stop(1,#fff));
   background: -moz-gradient(linear,left top,right top,from(rgba(255,255,255,1)),to(rgba(255,255,255,1)),color-stop(1,#fff));
