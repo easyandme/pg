@@ -1186,14 +1186,14 @@ header {
 .subs p:nth-child(1) {
     color: #e53659;
     font-size: 14px;
-    width: 280px;
+    width: 290px;
     margin-left: 50%;
     word-spacing: 0;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
 }
 #bp {
-    width: 280px;
+    width: 290px;
     margin-top: -5px;
 }
 input.email {
@@ -1217,8 +1217,8 @@ input.email {
     width: 100%;
 } 
 form { 
-    width: 82%;
-    margin-left: 9%;
+    width: 88%;
+    margin-left: 6%;
     margin-top: -70px;  
     display: flex;
     display: -ms-flexbox;
