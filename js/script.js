@@ -44,8 +44,8 @@ $(window).scroll(function() {
         x = 0;
       }
 });
-} else if (screen.width < 375) {
-  $('#submit,   #submit2').attr('value', 'join').css('width','57px');
+} if (screen.width < 375) {
+  $('#submit, #submit2').attr('value', 'join');
 }
 var i = 1;
 window.setInterval(function() {
