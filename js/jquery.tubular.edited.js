@@ -121,18 +121,28 @@ function vanish() {
     $('body').css('overflow','visible');
     $('#player').remove();
     if (answered == 1) {
-    $('.intros button').html('<p>Nice! We have just the thing for you</p>')
-    } else {
-    $('.intros button').html('<p>Ouch! Looks like you need some practice</p>')
-    }
-    $('.intros button + p').html('The sample video is embedded from YouTube. Click <a target="_blank" style="color:brown" href="https://www.youtube.com/watch?v=Vmb1tqYqyII">here</a> to see the full version.');
-    $('.mask2').css('visibility','hidden'); 
+        $('.intros button').html('<p>Not quite! Though I suppose you were pretty close.</p>')
+    } if (answered == 2) {
+        $('.intros button').html('<p>Nice! You have the true heart of a serial killer.</p>')
+    } if (answered == 3) {
+        $('.intros button').html('<p>Not even close! That shirt is ruined.</p>')
+    } else if (answered == 4 || answered == 0 ){
+        $('.intros button').html('<p>Wrong! Those fumes could be toxic, you know.</p>')
+    }  
+    /*$('.intros button + p').html('The sample video is embedded from YouTube. Click <a target="_blank" style="color:brown" href="https://www.youtube.com/watch?v=Vmb1tqYqyII">here</a> to see the full version.');
+    */$('.mask2').css('visibility','hidden'); 
 } 
 
 $('a.btn').click(function(){
 $(this).css({'color':'rgba(255, 255, 255, .35)','background-color':'rgba(226, 40, 78, 1);'});
 if (this.id == 'correct') {
+    answered = 2;
+} else if (this.id == 'mouth') {
     answered = 1;
+} else if (this.id == 'steal') {
+    answered = 3;
+} else if (this.id == 'fire') {
+    answered = 4;
 }
 setTimeout(function(){
     sd(); 
@@ -142,7 +152,7 @@ setTimeout(function(){
 setTimeout(function(){
         sd(); 
         setTimeout(vanish, 5000)
-    }, 15000)
+    }, 15200)
             }
 }
 

@@ -27,7 +27,7 @@ videoPlayed = 1;
 } else {window.location.reload()} 
 });
 
-if( screen.width > 800 ) {
+if( screen.width > 1024 ) {
       var x = 0;
 $(window).scroll(function() {  
 			if ($(this).scrollTop() > 50 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
@@ -44,7 +44,7 @@ $(window).scroll(function() {
         x = 0;
       }
 });
-} else {
+} else if (screen.width < 375) {
   $('#submit,   #submit2').attr('value', 'join').css('width','57px');
 }
 var i = 1;
