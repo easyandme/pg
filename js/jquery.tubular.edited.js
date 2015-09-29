@@ -121,7 +121,7 @@ function vanish() {
     $('body').css('overflow','visible');
     $('#player').remove();
     if (answered == 1) {
-        $('.intros button').html('<p>Not quite! Though I suppose you were pretty close.</p>')
+        $('.intros button').html('<p>Not quite! But you were pretty close.</p>')
     } if (answered == 2) {
         $('.intros button').html('<p>Nice! You have the true heart of a serial killer.</p>')
     } if (answered == 3) {
@@ -129,8 +129,8 @@ function vanish() {
     } else if (answered == 4 || answered == 0 ){
         $('.intros button').html('<p>Wrong! Those fumes could be toxic, you know.</p>')
     }  
-    /*$('.intros button + p').html('The sample video is embedded from YouTube. Click <a target="_blank" style="color:brown" href="https://www.youtube.com/watch?v=Vmb1tqYqyII">here</a> to see the full version.');
-    */$('.mask2').css('visibility','hidden'); 
+    $('.intros button + p').html('Press the button to play it again.');
+    $('.mask2').css('visibility','hidden'); 
 } 
 
 $('a.btn').click(function(){
