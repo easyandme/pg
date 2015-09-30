@@ -54,8 +54,7 @@
 	</aside>  
 </section>
 	    <section class="mask"></section> 
-		<section class="downBar">
-		    <p class="huh">HUH?</p>
+		<section class="downBar"> 
 			<img src="assets/icon_downarrow.png" class="triangle" />
 		</section>
 		<aside class="whitespace"></aside>
@@ -182,13 +181,13 @@
 	<script type="text/javascript">
 	$(function() { 
 			$('body').on('click', '#playDemo', function() {
-			  ga('send', 'event', 'button', 'click', 'Played_Demo');
+			  ga('send', 'event', 'button', 'playDemo', 'Played_Demo');
 			});
 			$('body').on('click', '#submit', function() {
-			  ga('send', 'event', 'button', 'click', 'Subscribe');
+			  ga('send', 'event', 'button', 'subscribe', 'Subscribe_via_header');
 			});
 			$('body').on('click', '#submit2', function() {
-			  ga('send', 'event', 'button', 'click', 'Subscribe_via_footer');
+			  ga('send', 'event', 'button', 'subscribe', 'Subscribe_via_footer');
 			});
 	});
 </script>

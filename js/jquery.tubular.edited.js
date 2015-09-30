@@ -32,7 +32,7 @@
             $node = $(node); // cache wrapper node
 
         // build container
-        var tubularContainer = '<div id="pg-container" style="overflow: hidden; position: absolute; z-index: 12; width: 100%; height: 100%; border-radius: 25px; left:0; top: 0"><div id="pg-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 100%; z-index: 1; position: absolute; left: 0; top: 0;"></div>';
+        var tubularContainer = '<div id="pg-container" style="overflow: hidden; position: absolute; z-index: 12; width: 100%; height: 100%; border-radius: 25px; -moz-border-radius: 25px;-webkit-border-radius: 25px; left:0; top: 0"><div id="pg-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 100%; z-index: 1; position: absolute; left: 0; top: 0;"></div>';
 
         // set up css prereq's, inject tubular container and set up wrapper defaults
         $('html,body').css({'width': '100%', 'height': '100%'});
@@ -122,10 +122,10 @@ function vanish() {
     $('#player').remove();
     if (answered == 1) {
         $('.intros button').html('<p>Not quite! But you were pretty close.</p>')
-    } if (answered == 2) {
+    } else if (answered == 2) {
         $('.intros button').html('<p>Nice! You have the true heart of a serial killer.</p>')
-    } if (answered == 3) {
-        $('.intros button').html('<p>Not even close! That shirt is ruined.</p>')
+    } else if (answered == 3) {
+        $('.intros button').html('<p>Not even close! <br>That shirt is ruined.</p>')
     } else if (answered == 4 || answered == 0 ){
         $('.intros button').html('<p>Wrong! Those fumes could be toxic, you know.</p>')
     }  

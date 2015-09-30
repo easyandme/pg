@@ -75,6 +75,11 @@ header {
     position: fixed;
     top: 0;
 } 
+form {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+}
 .content { 
     display: flex;
 	display: -ms-flexbox;
@@ -1219,10 +1224,7 @@ input.email {
 form { 
     width: 88%;
     margin-left: 6%;
-    margin-top: -70px;  
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-flex;
+    margin-top: -70px;   
 }
 #form1 {
     margin-top: -100px;
