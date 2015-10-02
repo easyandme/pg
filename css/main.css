@@ -135,14 +135,18 @@ img.iconarrow {
     margin-top: 80px;
 }
 .stt {
+    background-color: #e2284e;
     display: none;
+    background-image: url(../assets/up_arrow.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 42px;
     height: 42px;
     position: fixed;
     cursor: pointer;
     bottom: 30px; 
-    right: 30px;
-    opacity: .8;
+    right: 30px; 
     z-index: 9999;
 }
 .navbar {
