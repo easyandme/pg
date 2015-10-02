@@ -126,9 +126,9 @@ function vanish() {
         $('.intros button').html('<p>Nice! You have the true heart of a serial killer.</p>')
     } else if (answered == 3) {
         $('.intros button').html('<p>Not even close! <br>That shirt is ruined.</p>')
-    } else if (answered == 4 || answered == 0 ){
+    } else if (answered == 4){
         $('.intros button').html('<p>Wrong! Those fumes could be toxic, you know.</p>')
-    }  
+    } else { $('.intros button').html('<p>Hey! Make sure to click an answer next time!</p>') }
     $('.intros button + p').html('Press the button to play it again.');
     $('.mask2').css('visibility','hidden'); 
 } 

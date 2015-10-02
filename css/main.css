@@ -348,7 +348,7 @@ a.btn:hover::after{ left: 0px;}
 .play { 
 	visibility: hidden;
     position: absolute;
-    top: -100px;
+    top: -105px;
     left: 50%;
     z-index: 30;
 }
