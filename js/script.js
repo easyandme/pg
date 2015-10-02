@@ -95,9 +95,22 @@ $('.triangle').click(function() {
     }, 1000);
 });
 
+$(window).scroll(function() { 
+       if ($(this).scrollTop() > 2500) {
+          $('.stt').fadeIn(1000);
+       } else { 
+          $('.stt').fadeOut(1000);
+       }
+  })
+  $('.stt').click(function(){
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
+})
+
 setInterval(function(){
 $('.triangle').toggleClass('animated bounce');
-}, 5000);
+}, 5000); 
 /* setTimeout(function(){
 $('.subs>p').addClass('animated shimmer');
 }, 2500);  */

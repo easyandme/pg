@@ -134,6 +134,17 @@ img.iconarrow {
 	width: 436px;
     margin-top: 80px;
 }
+.stt {
+    display: none;
+    width: 42px;
+    height: 42px;
+    position: fixed;
+    cursor: pointer;
+    bottom: 30px; 
+    right: 30px;
+    opacity: .8;
+    z-index: 9999;
+}
 .navbar {
     position: absolute; 
     right: 16px; 
@@ -141,7 +152,7 @@ img.iconarrow {
     overflow: hidden;
     font-weight: bold;
     line-height: 4em;
-    width: 440px;
+    width: 540px;
     font-family: ralewaymedium, raleway;
 } 
 .navs {
@@ -557,6 +568,8 @@ p.progressbar-text {
 	font-size: 28px;
     font-family: ralewayextrabold;
     -webkit-transform: translate(-40%, -42%);
+    -moz-transform: translate(-40%, -42%);
+    transform: translate(-40%, -42%);
 } 
 .promo { 
 	position: relative;
@@ -1061,7 +1074,7 @@ h2 {
 }
 } 
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 .navbar {
 	visibility: hidden;
 }
