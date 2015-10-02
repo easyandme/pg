@@ -178,7 +178,7 @@ img.iconarrow {
 .navs_b:hover {
 	opacity: 1;
 } 
-.navs:hover {
+.navs:not(#menu):hover {
 	color: #fff;
     opacity: .7;
 } 
@@ -1101,6 +1101,12 @@ h2 {
 .disclaimer:before { 
     margin-left: 126px;
     visibility: hidden;
+}
+.navs:not(#menu):hover { 
+    opacity: 1;
+} 
+.stt { 
+    opacity: .7;
 }
 #menu { 
     background: url(../assets/menu.png) center center no-repeat;

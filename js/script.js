@@ -27,14 +27,9 @@ videoPlayed = 1;
 } else {window.location.reload()} 
 });
 
-if( screen.width > 300 ) {
+if( screen.width > 1024 ) {
       var x = 0;
 $(window).scroll(function() {  
-			if ($(this).scrollTop() > 50 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
-				$('.container').fadeIn();
-			} else {
-				$('.container').fadeOut();
-			};
       if ($(this).scrollTop() >= 200) {
         $('.phone_mockup').addClass('animated slideOutDown');
         x = 1;
@@ -44,9 +39,17 @@ $(window).scroll(function() {
         x = 0;
       }
 });
-} if (screen.width < 375) {
+} else if (screen.width < 375) {
   $('#submit, #submit2').attr('value', 'join');
 }
+$(window).scroll(function() { 
+if ($(this).scrollTop() > 50 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
+  $('.container').fadeIn();
+} else {
+  $('.container').fadeOut();
+}
+});
+
 var i = 1;
 window.setInterval(function() {
 	   i += 1;	
