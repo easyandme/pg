@@ -8,8 +8,7 @@
          url('../fonts/raleway-medium-webfont.ttf') format('truetype'),
          url('../fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
     font-weight: normal;
-    font-style: normal;
-
+    font-style: normal; 
 }
 
 
@@ -136,6 +135,12 @@ img.iconarrow {
 }
 #menu {
     display: none;
+    height: 32px;
+    width: 32px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    border-style: none;
 }
 .stt {
     background-color: #e53659;
@@ -1090,13 +1095,13 @@ h2 {
 	visibility: visible;
 }
 #twitter {
-    right: 140px;
+    right: 150px;
 }
 #fb {
-    right: 90px;
+    right: 100px;
 }
 #ins {
-    right: 40px;
+    right: 50px;
 }
 .disclaimer:before { 
     margin-left: 126px;
@@ -1110,21 +1115,14 @@ h2 {
 }
 #menu { 
     background: url(../assets/menu.png) center center no-repeat;
-    background-size: contain;
-    width: 32px;
-    height: 32px;
+    background-size: contain; 
     position: absolute;
-    background-repeat: no-repeat;
-    top: 20px;
-    margin-left: 10px;
-    display: block;
-    position: absolute;
-    right: -10px;
+    background-repeat: no-repeat;  
+    display: block;  
     visibility: visible;
-    border-style: none;
 }
 .navbar {
-    height: 500px;
+    height: 100%;
 }
 .navs:first-child {
     position: absolute;
