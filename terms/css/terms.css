@@ -8,10 +8,9 @@ header {
     display: block;
     visibility: visible;
 } 
+h2 {text-align: left;}
 h5 {float: right;}
-li {
-	margin-top: 3px;
-}
+li {margin-top: 3px;}
 .title {
     top: 120px;
     position: absolute;

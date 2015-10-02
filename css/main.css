@@ -150,7 +150,7 @@ img.iconarrow {
     right: 16px; 
     margin-left: 12px;
     overflow: hidden;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 4em;
     width: 540px;
     font-family: ralewaymedium, raleway;
