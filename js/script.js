@@ -27,7 +27,7 @@ videoPlayed = 1;
 } else {window.location.reload()} 
 });
 
-if( screen.width > 1024 ) {
+if( screen.width > 300 ) {
       var x = 0;
 $(window).scroll(function() {  
 			if ($(this).scrollTop() > 50 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
@@ -124,7 +124,14 @@ $(".skip").click(function(){
         $('.mask').css('background-color','rgb(226,40,78)');
         $('body').css('overflow','visible');
 }); 
- 
+
+$("#menu").click(function(){  
+  if ( $('.links').css('visibility') == 'hidden' )
+    $('.links').css('visibility','visible');
+  else
+    $('.links').css('visibility','hidden');
+});
+
 });
 
 

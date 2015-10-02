@@ -134,8 +134,11 @@ img.iconarrow {
 	width: 436px;
     margin-top: 80px;
 }
+#menu {
+    display: none;
+}
 .stt {
-    background-color: #e2284e;
+    background-color: #e53659;
     display: none;
     background-image: url(../assets/up_arrow.png);
     background-size: contain;
@@ -1079,15 +1082,93 @@ h2 {
 } 
 
 @media only screen and (max-width: 800px) {
-.navbar {
+.links {
 	visibility: hidden;
+    font-weight: bold;
 }
 #twitter, #fb, #ins { 
 	visibility: visible;
 }
+#twitter {
+    right: 140px;
+}
+#fb {
+    right: 90px;
+}
+#ins {
+    right: 40px;
+}
 .disclaimer:before { 
     margin-left: 126px;
     visibility: hidden;
+}
+#menu { 
+    background: url(../assets/menu.png) center center no-repeat;
+    background-size: contain;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 20px;
+    margin-left: 10px;
+    display: block;
+    position: absolute;
+    right: -10px;
+    visibility: visible;
+    border-style: none;
+}
+.navbar {
+    height: 500px;
+}
+.navs:first-child {
+    position: absolute;
+    right: -10px;
+    top: 72px;
+    z-index: 999999;
+    background-color: #E2284E;
+    display: block;
+    width: 96px; 
+    text-align: center;
+}
+.navs:nth-child(2) {
+    position: absolute;
+    right: -10px;
+    top: 115px;
+    z-index: 999999;
+    background-color: #E2284E;
+    display: block;
+    width: 96px; 
+    text-align: center;
+}
+.navs:nth-child(3) {
+    position: absolute;
+    right: -10px;
+    top: 157px;
+    z-index: 999999;
+    background-color: #E2284E;
+    display: block;
+    width: 96px; 
+    text-align: center;
+}
+.navs:nth-child(4) {
+    position: absolute;
+    right: -10px;
+    top: 199px;
+    z-index: 999999;
+    background-color: #E2284E;
+    display: block;
+    width: 96px; 
+    text-align: center;
+}
+.navs:nth-child(5) {
+    position: absolute;
+    right: -10px;
+    top: 241px;
+    z-index: 999999;
+    background-color: #E2284E;
+    display: block;
+    width: 96px; 
+    text-align: center;
 }
 }
 @media only screen and (max-width: 480px) {
@@ -1178,10 +1259,7 @@ html, body {
 }
 * {
   -webkit-overflow-scrolling: touch;
-}
-header {
-	visibility: hidden;
-}
+} 
 #twitter, #fb, #ins { 
 	visibility: hidden;
 }
