@@ -1110,6 +1110,9 @@ h2 {
 .navs:not(#menu):hover { 
     opacity: 1;
 } 
+.navbar {
+    right: 0;
+}
 .stt { 
     opacity: .7;
 }
