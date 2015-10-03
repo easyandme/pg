@@ -27,7 +27,7 @@ videoPlayed = 1;
 } else {window.location.reload()} 
 });
 
-if( screen.width > 1024 ) {
+if (screen.width > 1024) {
       var x = 0;
 $(window).scroll(function() {  
       if ($(this).scrollTop() >= 200) {
@@ -42,14 +42,23 @@ $(window).scroll(function() {
 } else if (screen.width < 375) {
   $('#submit, #submit2').attr('value', 'join');
 }
+if (screen.width > 800) {
 $(window).scroll(function() { 
 if ($(this).scrollTop() > 50 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
-  $('.container').fadeIn();
+  $('header').fadeIn();
 } else {
-  $('.container').fadeOut();
+  $('header').fadeOut();
 }
 });
-
+} else { 
+$(window).scroll(function() { 
+if ($(this).scrollTop() > 400 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
+  $('header').fadeIn();
+} else {
+  $('header').fadeOut();
+}
+});
+}
 var i = 1;
 window.setInterval(function() {
 	   i += 1;	
