@@ -1184,6 +1184,9 @@ h2 {
     -webkit-transform: translateY(180px);
     width: 280px;
 } 
+.nav_logo {
+    left: 0;
+}
 .guru { 
     position: static;
 }
