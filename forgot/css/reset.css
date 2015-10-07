@@ -84,5 +84,6 @@ article > h5 {
 .forgot {
     width: 80%;
     left: 0%;
+    word-break: break-all;
 }
 }

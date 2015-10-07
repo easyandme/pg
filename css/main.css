@@ -522,7 +522,7 @@ a.btn:hover::after{ left: 0px;}
 } 
 
 .animatedDelayed{-webkit-animation-duration:1s;animation-duration:1s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-delay:2s;animation-delay:2s;}
-.animatedSlow{-webkit-animation-duration:3s;animation-duration:3s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
+.animatedSlow{-webkit-animation-duration:1.5s;animation-duration:1.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 .animatedFast{-webkit-animation-duration:.5s;animation-duration:.5s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
 
 div.qframe {  
@@ -624,6 +624,22 @@ p.progressbar-text {
     -webkit-transform: translate(-50%, -50%);
     width: 243px;
     z-index: 100;
+}
+.fuls {
+    position: absolute;
+    bottom: -20px;
+    color: #fff;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    font-size: 21px;
+    font-family: ralewaymedium;
+    text-align: center;
+    background-color: #21B673;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    padding: 0 10px;
 }
 .tex p:nth-child(1) {
     font-size: 40px;

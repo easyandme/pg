@@ -6,7 +6,7 @@
     
     // defaults
     var defaults = {
-        ratio: 87/40, // usually either 4/3 or 16/9 -- tweak as needed
+        ratio: 16/9, // usually either 4/3 or 16/9 -- tweak as needed
         videoId: 'Vmb1tqYqyII', 
         mute: false,
         repeat: true,
@@ -19,7 +19,7 @@
         volumeDownClass: 'tubular-volume-down',
         increaseVolumeBy: 0,
         start: 123,
-        end: 142,
+        end: 138, 
         minimumSupportedWidth: 600,
         modestbranding: 0
     };
@@ -28,11 +28,11 @@
 
     window.tubular = function(node, options) { // should be called on the wrapper div
         var options = $.extend({}, defaults, options),
-            $body = $('.intros:nth-child(4)'), // cache body node
+            $body = $('body'), // cache body node
             $node = $(node); // cache wrapper node
 
         // build container
-        var tubularContainer = '<div id="pg-container" style="overflow: hidden; position: absolute; z-index: 12; width: 100%; height: 100%; border-radius: 25px; -moz-border-radius: 25px;-webkit-border-radius: 25px; left:0; top: 0"><div id="pg-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 100%; z-index: 1; position: absolute; left: 0; top: 0;"></div>';
+        var tubularContainer = '<div id="pg-container" style="overflow: hidden; position: absolute; z-index: 12; width: 100%; height: 100%; left:0; top: 0"><div id="pg-player" style="position: absolute"></div></div><div id="tubular-shield" style="width: 100%; height: 100%; z-index: 1; position: absolute; left: 0; top: 0;"></div>';
 
         // set up css prereq's, inject tubular container and set up wrapper defaults
         $('html,body').css({'width': '100%', 'height': '100%'});
@@ -43,8 +43,8 @@
         window.player;
         window.onYouTubeIframeAPIReady = function() {
             player = new YT.Player('pg-player', {
-                width: 876,
-                height: 399.5,
+                width: options.width,
+                height: Math.ceil(options.width / options.ratio),
                 videoId: options.videoId,
                 playerVars: {
                     controls: 0,
@@ -65,7 +65,7 @@
             resize();
             if (options.mute) e.target.mute();
             e.target.seekTo(options.start);
-            e.target.playVideo(); 
+            e.target.pauseVideo(); 
 }
 
 
@@ -113,24 +113,24 @@ function sd() {
     $('.play').removeClass('fadeIn animatedSlow').fadeOut(300);
 }
 
-function vanish() {
-    $('.mask').css('background-color','rgb(226,40,78)')
-    $('.tex').hide();
-    $('.intros button, .intros button + p').fadeIn(1000);
-    $('#pg-container, #pg-player, #tubular-shield').remove();
-    $('body').css('overflow','visible');
-    $('#player').remove();
-    if (answered == 1) {
-        $('.intros button').html('<p>Not quite! But you were pretty close.</p>')
-    } else if (answered == 2) {
-        $('.intros button').html('<p>Nice! You have the true heart of a serial killer.</p>')
-    } else if (answered == 3) {
-        $('.intros button').html('<p>Not even close! <br>That shirt is ruined.</p>')
-    } else if (answered == 4){
-        $('.intros button').html('<p>Wrong! Those fumes could be toxic, you know.</p>')
-    } else { $('.intros button').html('<p>Hey! Make sure to click an answer next time!</p>') }
-    $('.intros button + p').html('Press the button to play it again.<p><a class="fuls" href="http://www.plotguru.com/demo">Full Screen Demo</a></p>');
-    $('.mask2').css('visibility','hidden');  
+function vanish() { 
+    $('#pg-container, #pg-player, #tubular-shield, #player, .mask2, .play').addClass('animatedSlow fadeOut');  
+        $('.demo_pre').css('z-index','1').removeClass('slideOutUp animated'); 
+        $('.demo_img, .tm, .demo_play').remove();
+    setTimeout(function() {
+        player.mute();
+    }, 100);
+    setTimeout(function() {
+        $('#pg-container, #pg-player, #tubular-shield, #player, .mask2, .play').remove();
+    }, 1600);
+    setTimeout(function() {
+        window.location.href = 'http://www.plotguru.com';
+    }, 6600);
+    if (answered == 2) {
+        $('.wp').text('Nice! I have just the thing for you.')
+    } else { 
+        $('.wp').text('Ouch. Looks like you could use some practice!')
+    }
 } 
 
 $('a.btn').click(function(){
@@ -162,9 +162,9 @@ setTimeout(function(){
 
         // resize handler updates width, height and offset of player after resize/init
         var resize = function() {
-            var width = $('#pg-player').width(),
+            var width = $(window).width(),
                 pWidth, // player width, to be defined
-                height = $('#pg-player').height(),
+                height = $(window).height(),
                 pHeight, // player height, tbd
                 $tubularPlayer = $('#pg-player');
 
@@ -223,9 +223,6 @@ setTimeout(function(){
                 tubular(this, options));
             }
         });
-    }
-
-
- 
+    } 
 
 })(jQuery, window);
