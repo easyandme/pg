@@ -39,7 +39,7 @@
 }
 
 html {overflow-x: hidden; height: 100%}		
-body { height: 100%; width: 100%; position: absolute; padding: 0px; font-size:1em; font-family: 'Raleway', sans-serif; font-weight: 100; font-size: 18px; background-color: #fff; }
+body { height: 100%; width: 100%; position: absolute; padding: 0px; font-size:1em; font-family: 'Raleway', ralewaymedium, sans-serif; font-weight: 100; font-size: 18px; background-color: #fff; }
  
 a{text-decoration: none !important;color: #fff;}
 h2 { font-size: 24px; font-family: ralewaybold, raleway;}

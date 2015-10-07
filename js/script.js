@@ -122,9 +122,6 @@ $(window).scroll(function() {
 })
 }
 
-setInterval(function(){
-$('.triangle').toggleClass('animated bounce');
-}, 5000); 
 /* setTimeout(function(){
 $('.subs>p').addClass('animated shimmer');
 }, 2500);  */
