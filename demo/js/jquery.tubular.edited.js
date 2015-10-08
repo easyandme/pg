@@ -86,7 +86,7 @@ var circle = new ProgressBar.Circle('#clock', {
     trailColor: "#000",
     strokeWidth: 4,
     trailWidth: 1,
-    duration: 7500,
+    duration: 8000,
     text: {
         value: '5'
     },
@@ -108,6 +108,9 @@ var answered = 0;
 setTimeout(function(){
 $('.play').css('visibility','visible').addClass('slideInUp animatedSlow');
 }, 4000);
+setTimeout(function(){
+$('.progressbar-text').css('visibility','visible');
+}, 8000);
 
 function sd() {
     $('.play').removeClass('fadeIn animatedSlow').fadeOut(300);
@@ -125,7 +128,7 @@ function vanish() {
     }, 1600);
     setTimeout(function() {
         window.location.href = 'http://www.plotguru.com';
-    }, 6600);
+    }, 4000);
     if (answered == 2) {
         $('.wp').text('Nice! I have just the thing for you.')
     } else { 
@@ -151,8 +154,8 @@ setTimeout(function(){
 
 setTimeout(function(){
         sd(); 
-        setTimeout(vanish, 5000)
-    }, 15200)
+        setTimeout(vanish, 5500)
+    }, 16000)
             }
 }
 

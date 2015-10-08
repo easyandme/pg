@@ -45,13 +45,15 @@ $(window).scroll(function() {
 if (screen.width > 800) {
 $(window).scroll(function() { 
 if ($(this).scrollTop() > 50 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
-  $('header').fadeIn();
+  if ($('header').hasClass('fadeOutUp')) {$('header').removeClass('animated fadeOutUp')};
+  $('header').addClass('animated fadeInDown');
 } else {
-  $('header').fadeOut();
+  $('header').removeClass('animated fadeInDown').addClass('animated fadeOutUp');
 }
 });
 } else { 
-$(window).scroll(function() { 
+  $('header').css({'opacity':1,'display':'none'});
+  $(window).scroll(function() { 
 if ($(this).scrollTop() > 400 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
   $('header').fadeIn();
 } else {

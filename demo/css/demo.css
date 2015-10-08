@@ -58,6 +58,12 @@ h1, h3, h4 {
     margin-left: -50px;
     cursor: pointer;
 }
+.progressbar-text {
+    visibility: hidden;
+}
+.demo_play:hover {
+    opacity: .7;
+}
 .demo_skip {
     position: absolute;
     bottom: 0;
@@ -66,4 +72,9 @@ h1, h3, h4 {
     font-size: 1em;
     cursor: pointer;
     z-index: 100;
+}
+@media only screen and (max-width: 1024px) {
+.wp {
+    font-size: 30px;
+}
 }
