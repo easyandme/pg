@@ -7,7 +7,13 @@ p > a:hover {
 header {
     display: block;
     visibility: visible;
+    opacity: 1;
 } 
+form[name="forgot"] {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+}
 h2 {text-align: left;}
 h5 {float: right;}
 li {margin-top: 3px;}

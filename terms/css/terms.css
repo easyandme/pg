@@ -7,6 +7,7 @@ p > a:hover {
 header {
     display: block;
     visibility: visible;
+    opacity: 1;
 } 
 h2 {text-align: left;}
 h5 {float: right;}

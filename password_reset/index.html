@@ -6,19 +6,19 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1,  minimum-scale=1, user-scalable=no">
 	<meta name="author" content="Plot Guru, Inc">
 	<meta name="keywords" content="password, forgot, reset, plotguru, plotgurupassword, netflix, plotguruapp, youtube, App, Questions, Predictions">
-	<meta name="description" content="Forgot Password - Plot Guru - Watch Netflix. Answer real-time trivia. Are you the Plot Guru?">
+	<meta name="description" content="Password Reset - Plot Guru - Watch Netflix. Answer real-time trivia. Are you the Plot Guru?">
 	<meta property="og:image" content="../assets/icon3.png">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://wwww.plotguru.com/forgot">
-	<meta property="og:title" content="Forgot Password - Plot Guru">
+	<meta property="og:title" content="Password Reset - Plot Guru">
 	<meta property="og:site_name" content="Plot Guru, Inc">
-	<meta property="og:description" content="Forgot Password - Plot Guru - Watch Netflix. Answer real-time trivia. Are you the Plot Guru?">
+	<meta property="og:description" content="Password Reset - Plot Guru - Watch Netflix. Answer real-time trivia. Are you the Plot Guru?">
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@plotguru" />
 	<meta name="twitter:title" content="Forgot Password - Plot Guru - Watch Netflix. Answer real-time trivia. Are you the Plot Guru?" />
 	<meta name="twitter:description" content="Forgot Password - Plot Guru - Watch Netflix. Answer real-time trivia. Are you the Plot Guru?" />
 	<meta name="twitter:image" content="../assets/icon3.png" />
-	<title>Forgot Password - Plot Guru</title> 
+	<title>Reset Email Sent- Plot Guru</title> 
 	<link rel="shortcut icon" type="image/ico" href="../assets/favicon.ico"/>
 	<link rel="stylesheet" href="../css/normalize.css">  
 	<link rel="stylesheet" href="../css/main.css">   
@@ -39,14 +39,18 @@
 			     		     <button id="menu" class="navs" href="#"></button>
 	     		</nav> 
 	    </header>
-	    <h1 class="title">Forgot Your Password?</h1>
-	    <article>
-	    <p class="forgot">No worries! Enter the email you signed up to Plot Guru with, and we'll send you instructions to reset your password.</p>   
-	        <form id="form1" action="//plotguru.com/password_reset" method="post" name="forgot"> 
-			<input id="email" class="email" type="email" name="EMAIL" value="Email Address" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-			<input class="btns" id="submit" type="submit" name="subscribe" value="Send">
-		    </form>
-        </article> 
+	    <h3 class="title">Reset Password</h3>
+	    <form>
+	     <fieldset class="new">
+	     	<label>New Password:</label>
+	     	<input class="password-input" type="password" name="user[password]" id="user_password">
+     	</fieldset>
+	     <fieldset class="confirm">
+	     	<label>Confirm Password:</label>
+	     	<input class="password-input" type="password" name="user[password]" id="user_password_confirm">
+	     </fieldset> 
+	     <input class="button" type="submit" value="Reset" tabindex="3">
+        </form> 
         <br><br> 
 </body>
 	<script src="../js/jquery-1.10.1.min.js"></script> 
