@@ -104,10 +104,15 @@ trigerOnce = false;
 }
 
 var answered = 0;
-
+if (screen.width < 480) {
+setTimeout(function(){
+$('.play').css('visibility','visible').addClass('fadeIn animatedSlow');
+}, 4000);
+} else {
 setTimeout(function(){
 $('.play').css('visibility','visible').addClass('slideInUp animatedSlow');
 }, 4000);
+};
 setTimeout(function(){
 $('.progressbar-text').css('visibility','visible');
 }, 8000);

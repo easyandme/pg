@@ -78,3 +78,15 @@ h1, h3, h4 {
     font-size: 30px;
 }
 }
+
+@media screen and (orientation:portrait) { 
+.wp {
+    font-size: 1em;
+}
+.tm {
+    font-size: 16px;
+}
+.qframe {
+    visibility: hidden;
+}
+}
