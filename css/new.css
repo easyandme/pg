@@ -52,6 +52,7 @@ header {
     -webkit-box-align: center; 
     align-items: center; 
     width: 100%;
+    height: 100%;
     background-color: #e53659;  
 } 
 .downbar {
@@ -162,6 +163,7 @@ header {
     flex-flow: column;
     -ms-flex-flow: column;
     -webkit-flex-flow: column;
+    height: 200%;
     }
     .slogan {
     width: 190px;
