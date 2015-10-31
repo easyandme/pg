@@ -165,13 +165,16 @@ header {
     -webkit-flex-flow: column;
     height: 200%;
     }
+    header {
+    height: 0;
+    }
     .slogan {
     width: 190px;
     margin-left: 0;
     -webkit-order: 1;
     -ms-order: 1;
     order: 1;
-    margin-top: 80px;
+    margin-top: 40px;
     }
     .slogan_text {
     font-size: 16px;
@@ -181,6 +184,8 @@ header {
     -ms-order: 2;
     order: 2;
     margin: -90px auto;
+    transform: translateY(-20%);
+    -webkit-transform: translateY(-20%);
     }
     img[alt="download"] { 
     width: 190px;
