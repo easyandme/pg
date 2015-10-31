@@ -155,7 +155,9 @@ header {
 } 
 @media only screen and (max-width: 700px) {
     body {
-    overflow: scroll; 
+    overflow: scroll;
+    height: 580px;
+    -webkit-overflow-scrolling: touch;
     }
     .content { 
     flex-flow: column;
