@@ -81,7 +81,7 @@ header {
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;
-    margin: 40px 0 0 -60px;
+    margin: 80px 0 0 -60px;
  }
  .mockup > img {
     width: 216px;
@@ -93,7 +93,7 @@ header {
  .slogan { 
     width: 240px;
     height: 543px;
-    margin-top: 140px;
+    margin-top: 180px;
     margin-left: 50px;
  }
  img[alt="logo"] { 
@@ -167,6 +167,7 @@ header {
     }
     header {
     height: 0;
+    bottom: -30px;      
     }
     .slogan {
     width: 190px;
@@ -201,6 +202,7 @@ header {
     right: 0;  
     text-align: center;
     padding-right: 0;
+    font-size: 1em;
     }
     .social {
     margin-top: -40px;
