@@ -84,11 +84,11 @@ header {
     margin: 40px 0 0 -60px;
  }
  .mockup > img {
-    width: 220px;
+    width: 216px;
     height: 385px;
     position: absolute;
     top: 63px;
-    left: 41px;
+    left: 43px;
  }
  .slogan { 
     width: 240px;
@@ -184,8 +184,8 @@ header {
     -ms-order: 2;
     order: 2;
     margin: -90px auto;
-    transform: translateY(-20%);
-    -webkit-transform: translateY(-20%);
+    transform: translateY(-10%);
+    -webkit-transform: translateY(-10%);
     }
     img[alt="download"] { 
     width: 190px;
@@ -195,7 +195,7 @@ header {
     }
     .downbar {
     bottom: -106%;
-    height: 130%;
+    height: 120%;
     }
     .navbar {
     right: 0;  
