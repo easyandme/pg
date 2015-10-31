@@ -208,12 +208,19 @@ header {
     margin-top: -40px;
     }
     #twitter {
-    margin-left: -205px;
+    margin-left: -190px;
     }
     #fb {
-    margin-left: -155px;
+    margin-left: -140px;
     }
     #ins {
-    margin-left: -105px;
+    margin-left: -90px;
     }
+    .mockup > img {
+    width: 216px;
+    height: 380px;
+    position: absolute;
+    top: 62px;
+    left: 43px;
+ }
 }
