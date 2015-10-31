@@ -83,6 +83,9 @@ header {
     z-index: 101;
     position: absolute;
     bottom: 7px;
+}
+header > nav > div {
+    display: inline;
 } 
 .content { 
     display: flex;
@@ -276,7 +279,6 @@ header {
     left: 43px;
  }
     header > nav > div {
-    display: inline;
     width: 100%;
     position: absolute;
     height: 100%;
@@ -289,12 +291,15 @@ header {
 
 
 @media only screen and (orientation:landscape) and (max-width: 700px) { 
+.mockup {
+    height: 445px;
+}
 .mockup > img {
     width: 155px;
-    height: 277px;
+    height: 285px;
     position: absolute;
     top: 45px;
-    left: 76px;
+    left: 75px;
 }
 img[alt="logo"] {
     width: 100px;
