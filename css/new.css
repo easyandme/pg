@@ -264,13 +264,13 @@ header > nav > div {
     margin-top: -40px;
     }
     #twitter {
-    margin-left: 0;
+    margin-left: -5px;
     }
     #fb {
-    margin-left: 50px;
+    margin-left: 45px;
     }
     #ins {
-    margin-left: 100px;
+    margin-left: 95px;
     }
     .mockup > img {
     width: 216px;
