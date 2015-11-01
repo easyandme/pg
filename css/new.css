@@ -169,6 +169,7 @@ header > nav > div {
  } 
  .navs {
     color: #bababa;
+    padding-right: 4px;
  }
  .navbar {
     position: absolute;
