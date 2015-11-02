@@ -11,12 +11,12 @@
     font-style: normal; 
 }
 @font-face {
-    font-family: 'Avenir Heavy'; 
+    font-family: 'AvenirHeavy'; 
     src: url('../fonts/Avenir-Heavy.eot');
     src: url('../fonts/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
          url('../fonts/Avenir-Heavy.ttf') format('truetype'), 
          url('../fonts/Avenir-Heavy.woff') format('woff'),
-         url('../fonts/Avenir-Heavy.svg') format('svg');
+         url('../fonts/Avenir-Heavy.svg#AvenirHeavy') format('svg');
     font-weight: normal;
     font-style: normal; 
 } 
@@ -166,7 +166,7 @@ header > nav > div {
     text-align: center;
     font-size: 22px;
     word-spacing: 0;
-    font-family: Avenir Heavy, ralewaybold;
+    font-family: AvenirHeavy, ralewaybold;
     color: #fff;
     margin-top: 20px;
     line-height: 1.3em;
@@ -183,7 +183,7 @@ header > nav > div {
     font-size: 18px;
     text-align: right;
     padding-right: 20px;
-    font-family: Avenir Heavy, ralewaybold;
+    font-family: AvenirHeavy, ralewaybold;
  }
  #twitter {
     background: url(../assets/icon_twitter_g.png) center center no-repeat;
@@ -252,8 +252,11 @@ header > nav > div {
     transform: translateY(-10%);
     -webkit-transform: translateY(-10%);
         background-color: #fff;
-    height: 70%;
+    height: 90%;
     width: 100%;
+    }
+    img[alt="logo"] {
+    margin: -70px auto auto;
     }
     img[alt="download"] { 
     width: 190px;
@@ -309,7 +312,7 @@ header > nav > div {
 
 }
 
-@media screen and (orientation:landscape) and (max-width: 700px) { 
+/* @media screen and (orientation:landscape) and (max-width: 700px) { 
 .mockup {
     height: 445px;
 }
@@ -334,4 +337,4 @@ img[alt="wordmark"] {
 header {
     bottom: -70px;
 }
-}
+} */
