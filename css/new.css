@@ -51,7 +51,7 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 
 html {overflow: hidden; height: 100%;font-size: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; }		
-body { height: 100%; width: 100%; position: absolute; padding: 0px; font-size:16px; font-family: 'Raleway', ralewaymedium, sans-serif; font-weight: 100;background-color: #fff; }
+body { height: 100%; width: 100%; position: absolute; padding: 0px; font-size:16px; font-size:100%; font-family: ralewaybold, 'Raleway', ralewaymedium, sans-serif; font-weight: 100;background-color: #fff; }
  
 a{text-decoration: none !important;color: #fff;}
 h2 { font-size: 24px; font-family: ralewaybold, raleway;}
@@ -95,9 +95,9 @@ header > nav > div {
     -ms-flex-pack: center;
     justify-content: center;
     -ms-flex-align: center;
-    -webkit-align-items: center;
-    -webkit-box-align: center; 
-    align-items: center; 
+    -webkit-align-items: flex-end;
+    -webkit-box-align: end;
+    align-items: flex-end;
     width: 100%;
     height: 100%;
     background-color: #e53659;  
@@ -121,27 +121,28 @@ header > nav > div {
  .mockup {
     position: relative;
     background: url(../assets/image_iphone6.png) center center no-repeat; 
-    width: 305px;
-    height: 543px; 
-    z-index: 999; 
-    background-size: contain;
-    display: flex;
+    width: 20em;
+    height: 100%;
+    z-index: 999;
+    background-size: 20em;
+    display: flexbox;
     display: -ms-flexbox;
     display: -webkit-flex;
-    margin: 80px 0 0 -60px;
+    margin: 0 0 8px -90px;
+    background-position: bottom;
  }
  .mockup > img {
-    width: 216px;
-    height: 385px;
-    position: absolute;
-    top: 63px;
-    left: 43px;
- }
+    width: 14.2em;
+    height: 25.3em;
+    position: absolute;  
+    bottom: 101px;
+    left: 50%;
+    margin-left: -7.18em;
+} 
  .slogan { 
     width: 240px;
-    height: 543px;
-    margin-top: 180px;
-    margin-left: 50px;
+    height: 536px; 
+    margin-left: 30px;
  }
  img[alt="logo"] { 
     display: table;
@@ -151,21 +152,21 @@ header > nav > div {
  img[alt="wordmark"] { 
     position: relative;
     display: table;
-    margin: 8px auto auto;
+    margin: 15px auto auto;
  }
  img[alt="download"] { 
     position: relative;
     display: table;
-    margin: 40px auto auto;
+    margin: 42px auto auto;
  }
  .slogan_text {
     text-align: center;
-    font-size: 20px;
-    word-spacing: 8px;
+    font-size: 22px;
+    word-spacing: 0;
     font-family: Avenir Heavy, ralewaybold;
     color: #fff;
-    margin-top: 16px;
-    line-height: 1em;
+    margin-top: 20px;
+    line-height: 1.3em;
  } 
  .navs {
     color: #bababa;
@@ -217,19 +218,22 @@ header > nav > div {
     flex-flow: column;
     -ms-flex-flow: column;
     -webkit-flex-flow: column;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
     height: 200%;
     }
     header {
     height: 0;
-    bottom: -50px;      
+    bottom: 40px;      
     }
     .slogan {
-    width: 190px;
+    width: 240px;
     margin-left: 0;
     -webkit-order: 1;
     -ms-order: 1;
-    order: 1;
-    margin-top: 40px;
+    order: 1; 
+    margin-top: 170px;
     }
     .slogan_text {
     font-size: 16px;
@@ -239,7 +243,7 @@ header > nav > div {
     -webkit-order: 2;
     -ms-order: 2;
     order: 2;
-    margin: -90px auto;
+    margin: 0 auto;
     transform: translateY(-10%);
     -webkit-transform: translateY(-10%);
     }
@@ -271,14 +275,7 @@ header > nav > div {
     }
     #ins {
     margin-left: 97px;
-    }
-    .mockup > img {
-    width: 216px;
-    height: 379px;
-    position: absolute;
-    top: 61px;
-    left: 43px;
- }
+    } 
     header > nav > div {
     width: 100%;
     position: absolute;
@@ -302,11 +299,9 @@ header > nav > div {
     top: 45px;
     left: 75px;
 }
-img[alt="logo"] {
-    width: 100px;
+img[alt="logo"] { 
 }
-img[alt="download"] {
-    width: 160px;
+img[alt="download"] { 
     margin: 16px auto auto;
 }
 img[alt="wordmark"] {
