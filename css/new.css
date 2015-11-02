@@ -241,8 +241,8 @@ header > nav > div {
     margin-top: 6em;
     }
     .slogan_text {
-    font-size: 16px;
-    word-spacing: 7px;
+    font-size: 18px;
+    word-spacing: 0;
     }
     .mockup { 
     -webkit-order: 2;
@@ -254,6 +254,9 @@ header > nav > div {
         background-color: #fff;
     height: 90%;
     width: 100%;
+    background-position: 0;
+    }
+    .mockup > img { 
     }
     img[alt="logo"] {
     margin: -70px auto auto;
