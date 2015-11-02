@@ -53,7 +53,7 @@ article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,sec
 /* HTML5 display-role reset for older browsers */
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 
-html {overflow: hidden; height: 100%;font-size: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; }		
+html {height: 100%;font-size: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%; }		
 body { height: 100%; width: 100%; position: absolute; padding: 0px; font-size:16px; font-size:100%; font-family: ralewaybold, 'Raleway', ralewaymedium, sans-serif; font-weight: 100;background-color: #fff; }
  
 a{text-decoration: none !important;color: #fff;}
@@ -213,7 +213,7 @@ header > nav > div {
 } 
 
 @media screen and (max-width: 700px) {
-    html, body {
+    body {
     overflow: scroll; 
     -webkit-overflow-scrolling: touch;
     }
