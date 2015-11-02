@@ -12,8 +12,11 @@
 }
 @font-face {
     font-family: 'Avenir Heavy'; 
-    src: url('../fonts/Avenir-Heavy.ttf');
-    src: url('../fonts/Avenir-Heavy.ttf') format('truetype'), 
+    src: url('../fonts/Avenir-Heavy.eot');
+    src: url('../fonts/Avenir-Heavy.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Avenir-Heavy.ttf') format('truetype'), 
+         url('../fonts/Avenir-Heavy.woff') format('woff'),
+         url('../fonts/Avenir-Heavy.svg') format('svg');
     font-weight: normal;
     font-style: normal; 
 } 
@@ -210,9 +213,12 @@ header > nav > div {
 } 
 
 @media only screen and (max-width: 700px) {
-    body {
+    html, body {
     overflow: scroll; 
     -webkit-overflow-scrolling: touch;
+    }
+    body {
+        height: 200%;
     }
     .content { 
     flex-flow: column;
@@ -220,12 +226,11 @@ header > nav > div {
     -webkit-flex-flow: column;
     align-items: center;
     -webkit-align-items: center;
-    -webkit-box-align: center;
-    height: 200%;
+    -webkit-box-align: center; 
     }
     header {
     height: 0;
-    bottom: 40px;      
+    bottom: 0;      
     }
     .slogan {
     width: 240px;
@@ -233,7 +238,7 @@ header > nav > div {
     -webkit-order: 1;
     -ms-order: 1;
     order: 1; 
-    margin-top: 170px;
+    margin-top: 6em;
     }
     .slogan_text {
     font-size: 16px;
@@ -246,6 +251,8 @@ header > nav > div {
     margin: 0 auto;
     transform: translateY(-10%);
     -webkit-transform: translateY(-10%);
+        background-color: #fff;
+    height: 70%;
     }
     img[alt="download"] { 
     width: 190px;
@@ -255,8 +262,6 @@ header > nav > div {
     width: 190px;
     }
     .downbar {
-    bottom: -106%;
-    height: 120%;
     }
     .navbar {
     right: 0;  
@@ -286,7 +291,15 @@ header > nav > div {
     bottom: 0;
     }
 }
+@media screen and (device-aspect-ratio: 2/3) { 
+    body {
+        height: 240%;
+    }
+}
 
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (width : 375px) and (height : 559px)  and (orientation : portrait) and (color : 8) (device-aspect-ratio : 375/667) and (aspect-ratio : 375/559) {
+
+}
 
 @media only screen and (orientation:landscape) and (max-width: 700px) { 
 .mockup {
