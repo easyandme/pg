@@ -292,7 +292,14 @@ header > nav > div {
     bottom: 0;
     }
 }
+
 @media screen and (device-aspect-ratio: 2/3) { 
+    body {
+        height: 270%;
+    }
+}
+
+@media screen and (device-aspect-ratio: 40/71) { 
     body {
         height: 240%;
     }
