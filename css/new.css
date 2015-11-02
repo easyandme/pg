@@ -252,12 +252,12 @@ header > nav > div {
     transform: translateY(-10%);
     -webkit-transform: translateY(-10%);
         background-color: #fff;
-    height: 90%;
+    height: 88%;
     width: 100%; 
-    background-position-y: 60px;
+    background-position-y: 46px;
     }
     .mockup > img {  
-        top: 127px;
+        top: 113px;
         bottom: 0;
     }
     img[alt="logo"] {
