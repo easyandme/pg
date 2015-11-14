@@ -493,6 +493,7 @@ header > nav > div {
     width: 190px;
     display: inline-block;
     font-size: 1.25em;
+    background-position: 8px;
     }
     #info {
     width: 190px;
