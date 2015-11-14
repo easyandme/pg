@@ -41,16 +41,11 @@
 		<section class="downbar">  
 		 <header class="container"> 
 	     		<nav class="navbar"> 
-				     		     <a class="navs links" href="http://www.plotguru.com/about.html">ABOUT</a>
-				     		     <a class="navs links" href="http://www.plotguru.com/blog.html">BLOG</a>
-				     		     <a class="navs links" href="http://www.plotguru.com/press.html">PRESS</a>
-				     		     <a class="navs links" href="http://www.plotguru.com/terms">TERMS</a>
-				     		     <a class="navs links" href="http://www.plotguru.com/contact.html">CONTACT</a>
-				     		     <div>
-			     		     <a id="twitter" class="navs social" href="http://twitter.com/plotguru"></a>
-			     		     <a id="fb" class="navs social" href="http://www.facebook.com/PlotGuru"></a>
-			     		     <a id="ins" class="navs social" href="http://instagram.com/plot.guru/"></a> 
-			     		     </div>
+				      <button id="android">Android user?</button>
+				      <form id="form1" name="EMAIL"> 
+			<input id="email" class="email" type="email" name="EMAIL" placeholder="Email Address" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+			<input class="btns" id="submit" type="submit" name="subscribe" value="Join List"></form>
+				      <a href="http://www.plotguru.com/about.html"><button id="info">Learn more</button></a>
 	     		</nav> 
 	    </header>   
 		</section> 
@@ -64,6 +59,7 @@
 			  ga('send', 'pageview');
     </script>
 	<script src="js/jquery-1.10.1.min.js"></script>  
+	<script>(function($){"use strict";$.ajaxChimp={responses:{"We have sent you a confirmation email":0,"Please enter a value":1,"An email address must contain a single @":2,"The domain portion of the email address is invalid (the portion after the @: )":3,"The username portion of the email address is invalid (the portion before the @: )":4,"This email address looks fake or invalid. Please enter a real email address":5},translations:{en:null},init:function(selector,options){$(selector).ajaxChimp(options)}};$.fn.ajaxChimp=function(options){$(this).each(function(i,elem){var form=$(elem);var email=form.find("input[type=email]");var label=form.find("label[for="+email.attr("id")+"]");var settings=$.extend({url:form.attr("action"),language:"en"},options);var url=settings.url.replace("/post?","/post-json?").concat("&c=?");form.attr("novalidate","true");email.attr("name","EMAIL");form.submit(function(){var msg;function successCallback(resp){if(resp.result==="success"){msg="We have sent you a confirmation email";label.removeClass("error").addClass("valid");email.removeClass("error").addClass("valid")}else{email.removeClass("valid").addClass("error");label.removeClass("valid").addClass("error");var index=-1;try{var parts=resp.msg.split(" - ",2);if(parts[1]===undefined){msg=resp.msg}else{var i=parseInt(parts[0],10);if(i.toString()===parts[0]){index=parts[0];msg=parts[1]}else{index=-1;msg=resp.msg}}}catch(e){index=-1;msg=resp.msg}}if(settings.language!=="en"&&$.ajaxChimp.responses[msg]!==undefined&&$.ajaxChimp.translations&&$.ajaxChimp.translations[settings.language]&&$.ajaxChimp.translations[settings.language][$.ajaxChimp.responses[msg]]){msg=$.ajaxChimp.translations[settings.language][$.ajaxChimp.responses[msg]]}label.html(msg);label.show(2e3);if(settings.callback){settings.callback(resp)}}var data={};var dataArray=form.serializeArray();$.each(dataArray,function(index,item){data[item.name]=item.value});$.ajax({url:url,data:data,success:successCallback,dataType:"jsonp",error:function(resp,text){console.log("mailchimp ajax submit error: "+text)}});var submitMsg="Submitting...";if(settings.language!=="en"&&$.ajaxChimp.translations&&$.ajaxChimp.translations[settings.language]&&$.ajaxChimp.translations[settings.language]["submit"]){submitMsg=$.ajaxChimp.translations[settings.language]["submit"]}label.html(submitMsg).show(2e3);return false})});return this}})(jQuery);</script>
 	<script type="text/javascript">
 	$(function() { 
 			var n = 1;
@@ -75,6 +71,27 @@
 			}, 500);
 			if (n >= 6) {n = 1};
 		}, 7700);
+
+		    $('#android').click(function() {
+		    	$(this).addClass('animatedFast flipOutX');
+		    	setTimeout(function() { 
+                $('#form1').addClass('animatedFast flipInX').show().css('display', 'inline-block');
+                $('#email').focus();
+		    	}, 250)
+		    });
+		     
+		    $('#form1').ajaxChimp({
+		    	url: 'http://plotguru.us12.list-manage.com/subscribe/post?u=09c7d43a847201fe8368a6e72&amp;id=d099cecb0e',
+             callback: callbackFunction
+  });
+     function callbackFunction (resp) {
+      if (resp.result === 'success') {
+        $('#form1').fadeOut(250);
+        setTimeout(function() { 
+         $('#android').removeClass('animatedFast flipOutX').css({'background-image':'url(./assets/icon_white_checkmark.png)','background-size':'25px'}).text('Nice Decision!').addClass('animatedFast flipInX');
+		    	}, 250)
+    }  
+}
 	});
     </script> 
 	<script type="text/javascript">

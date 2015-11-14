@@ -48,41 +48,37 @@
 		    </form>
         </article> 
         <br><br> 
-<pre>
- 
-
-<?php
-if (isset($_POST['send'])) {
-    $json = json_encode($_POST);
-    print_r($json);
-}
-
-?>    
-</pre>
+<!--<pre>
+// <?php
+// if (isset($_POST['send'])) {
+//    $json = json_encode($_POST);
+    // code here...
+// }
+// ?>    
+</pre> -->
 </body>
 	<script src="../js/jquery-1.10.1.min.js"></script> 
 	<script>
-/* $(function(){  
-	var a = 'adminJia@plotguru.com';
-	var b = 'EE731647ADB26BF51E9EC7B138824'
+  /* $(function(){  
+	var a = $('email').val();
 	$.ajax({
        type:"POST",
        url:"https://www.plotguru.info:8443/v1/user/update/password", 
        dataType: 'json',
-       async: false,
-       headers: {
-          "Authorization": "Basic " + btoa(a + ":" + b)
-       },
-       data: '{ "comment" }', 
+       async: false, 
+       data: a, 
        crossDomain: true, 
        cache:false,
        error: function(){
-       	alert("error");
+       	alert("Not a registered email adress");
        },
-       success: function(data){
-       	console.log(data);
+       success: function(data){ 
        }
 	}); */
+
+$('#submit').click(function() {
+    window.location.href = "http://www.plotguru.com/password_reset" ;
+});
 $("#menu").click(function(){  
   if ( $('.links').css('visibility') == 'hidden' ) {
     $('.navbar').css('height', '500px');

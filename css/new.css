@@ -174,16 +174,69 @@ header > nav > div {
  .navs {
     color: #bababa;
     padding-right: 4px;
+    margin-right: 4px;
  }
  .navbar {
     position: absolute;
-    right: 140px;
+    bottom: 5px;
+    right: 15px;
+    color: #fff;
     width: 100%;
-    line-height: 2em;
+    line-height: 1.5em;
     font-size: 18px;
-    text-align: right;
-    padding-right: 20px;
+    text-align: right; 
     font-family: AvenirHeavy, ralewaybold;
+ }
+ .navbar button {
+    border-style: none;
+    border-radius: 5px;
+    width: 170px;
+    margin-right: 10px;
+    background-color: #bababa; 
+    padding: 5px 0 5px 26px;
+ }
+ #form1 { 
+    display: none;
+ }
+ input.email:focus {
+    outline: none;
+ }
+ #email {
+    position: relative;
+    border-style: none;
+    padding: 4px 0 6px 0;
+    text-decoration: none;
+    letter-spacing: 1px; 
+    width: 200px;
+    background: #bababa;
+    height: 27px;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 5px 0 0 5px;
+    font-family: ralewaymedium, raleway;
+ }
+ #submit {
+    opacity: 1;
+    background-color: #e53659;
+    border-radius: 0 5px 5px 0;
+    border-style: none;
+    padding: 6px;
+    margin-left: -6px;
+    margin-right: 5px;
+ }
+ #android {
+    background-image: url(../assets/icon_white_android.png);    
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 4px;
+ }
+ #info {
+    background-image: url(../assets/icon_white_learnmore.png);    
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: 10px;
  }
  #twitter {
     background: url(../assets/icon_twitter_g.png) center center no-repeat;
@@ -211,6 +264,132 @@ header > nav > div {
     background-repeat: no-repeat; 
     margin-left: 109px;
 } 
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.animatedFast{-webkit-animation-duration:.25s;animation-duration:.25s;-webkit-animation-fill-mode:both;animation-fill-mode:both;}
+
+@-webkit-keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  animation-name: flipInX;
+}
+@-webkit-keyframes flipOutX {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes flipOutX {
+  from {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+
+  30% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+.flipOutX {
+  -webkit-animation-name: flipOutX;
+  animation-name: flipOutX;
+  -webkit-backface-visibility: visible !important;
+  backface-visibility: visible !important;
+}
 
 @media screen and (max-width: 700px) {
     body {
@@ -252,7 +431,7 @@ header > nav > div {
     transform: translateY(-10%);
     -webkit-transform: translateY(-10%);
         background-color: #fff;
-    height: 88%;
+    height: 87%;
     width: 100%; 
     background-position-y: 46px;
     }
@@ -271,12 +450,17 @@ header > nav > div {
     width: 190px;
     }
     .downbar {
+        z-index: 999;
+    }
+    .navs {
+    padding-right: 0;
     }
     .navbar {
     right: 0;  
     text-align: center;
     padding-right: 0;
     font-size: 14px;
+    bottom: 20px;
     }
     .social {
     margin-top: -40px;
@@ -291,13 +475,16 @@ header > nav > div {
     margin-left: 97px;
     } 
     header > nav > div {
-    width: 100%;
+    width: 0;
     position: absolute;
     height: 100%;
-    left: 0%;
+        left: 50%;
     margin-left: -66px;
     text-align: center;
     bottom: 0;
+    }
+    #android, #form1 {
+    margin-bottom: 30px;
     }
 }
 
@@ -312,34 +499,4 @@ header > nav > div {
         height: 240%;
     }
 }
-
-@media screen and (min-device-width : 375px) and (max-device-width : 667px) and (width : 375px) and (height : 559px)  and (orientation : portrait) and (color : 8) (device-aspect-ratio : 375/667) and (aspect-ratio : 375/559) {
-
-}
-
-/* @media screen and (orientation:landscape) and (max-width: 700px) { 
-.mockup {
-    height: 445px;
-}
-.mockup > img {
-    width: 155px;
-    height: 285px;
-    position: absolute;
-    top: 45px;
-    left: 75px;
-}
-img[alt="logo"] { 
-}
-img[alt="download"] { 
-    margin: 16px auto auto;
-}
-img[alt="wordmark"] {
-    width: 160px;
-}
-.slogan_text {
-    display: none;
-}
-header {
-    bottom: -70px;
-}
-} */
+ 

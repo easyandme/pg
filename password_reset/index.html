@@ -56,6 +56,30 @@
 	<script src="../js/jquery-1.10.1.min.js"></script> 
 	<script>
 $(function(){ 
+
+    var a = $('#user_password').val();
+	var b = $('#user_password_confirm').val();
+	if (a === b) {
+	$.ajax({
+       type:"POST",
+       url:"https://www.plotguru.info:8443/v1/user/update/password", 
+       dataType: 'json',
+       async: false,
+       headers: {
+          "Authorization": "Basic " + btoa(a + ":" + b)
+       },
+       data: '{ "comment" }', 
+       crossDomain: true, 
+       cache:false,
+       error: function(){
+       	alert("error");
+       },
+       success: function(data){
+       	//...
+       }
+	}); 
+}
+
 $(window).scroll(function() { 
    if ($(this).scrollTop() > 800) {
    	  $('.stt').fadeIn(1000);
