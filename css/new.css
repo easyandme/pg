@@ -492,9 +492,11 @@ header > nav > div {
     #android {
     width: 190px;
     display: inline-block;
+    font-size: 1.25em;
     }
     #info {
     width: 190px;
+    font-size: 1.25em;
     }
     #submit {
     padding: 8px;
@@ -503,13 +505,13 @@ header > nav > div {
 
 @media screen and (device-aspect-ratio: 2/3) { 
     body {
-        height: 270%;
+        height: 280%;
     }
 }
 
 @media screen and (device-aspect-ratio: 40/71) { 
     body {
-        height: 240%;
+        height: 255%;
     }
 }
  
