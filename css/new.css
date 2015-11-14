@@ -238,6 +238,9 @@ header > nav > div {
     background-repeat: no-repeat;
     background-position: 10px;
  }
+ #android, #info {
+    height: 37px;
+ }
  #twitter {
     background: url(../assets/icon_twitter_g.png) center center no-repeat;
     background-size: contain;
@@ -484,7 +487,17 @@ header > nav > div {
     bottom: 0;
     }
     #android, #form1 {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    }
+    #android {
+    width: 190px;
+    display: inline-block;
+    }
+    #info {
+    width: 190px;
+    }
+    #submit {
+    padding: 8px;
     }
 }
 

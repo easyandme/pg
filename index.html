@@ -88,9 +88,11 @@
       if (resp.result === 'success') {
         $('#form1').fadeOut(250);
         setTimeout(function() { 
-         $('#android').removeClass('animatedFast flipOutX').css({'background-image':'url(./assets/icon_white_checkmark.png)','background-size':'25px'}).text('Nice Decision!').addClass('animatedFast flipInX');
-		    	}, 250)
-    }  
+         $('#android').attr('disabled','disabled').removeClass('animatedFast flipOutX').css({'background-image':'url(./assets/icon_white_checkmark.png)','background-size':'25px', 'background-position':'12px'}).text('Nice Decision!').addClass('animatedFast flipInX');
+    	}, 250); 
+    } else {
+    	alert('Please enter a valid email address')
+    }
 }
 	});
     </script> 
