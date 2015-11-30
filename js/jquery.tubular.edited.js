@@ -28,7 +28,7 @@
 
     window.tubular = function(node, options) { // should be called on the wrapper div
         var options = $.extend({}, defaults, options),
-            $body = $('.intros:nth-child(4)'), // cache body node
+            $body = $('.intros:first-child'), // cache body node
             $node = $(node); // cache wrapper node
 
         // build container

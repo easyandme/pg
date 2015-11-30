@@ -24,8 +24,6 @@
 	<link rel="stylesheet" href="css/animate.css">  
 	<link rel="stylesheet" href="css/main.css"> 
     <script src="js/modernizr.js"></script>  
-    <script src="js/jquery-1.10.1.min.js"></script>
-    <script src="js/marquee.js"></script>
 </head>
 	<body>
 	    <header class="container">
@@ -43,35 +41,17 @@
 	     		</nav> 
 	    </header>    
 <section class="content">  
-  <div class="marquee">
-			<div class="marquee_data">
-				<div class="marquee_panel" data-image="assets/images/phone_1">
-				<h3>Gather your friends</h3>
-				<p>And find a couch! If you have no friends, we made a single-player mode just for you.</p>
-				<a class="cta" id="www">Play Demo</a>
-				</div>
-				<div class="marquee_panel" data-image="assets/images/phone_2">
-				<h3>Select a show</h3>
-				<p>We're launching with over 20 of the most popular titles on Netflix right now.</p>
-				<a class="cta">Play Demo</a>
-			    </div>
-		    	<div class="marquee_panel" data-image="assets/images/phone_3">
-				<h3>Answer questions</h3>
-				<p>The app syncs up with the show you're watching, sending out questions while the episode is playing. Make your best predictions!</p> 
-				<a class="cta">Play Demo</a>
-				</div>
-				<div class="marquee_panel" data-image="assets/images/phone_4">
-				<h3>Receive trivia</h3>
-				<p>In addition to receiving questions, you'll also get occasional pieces of trivia that relate to what's happening on-screen.</p> 
-				<a class="cta">Play Demo</a>
-				</div>
-				<div class="marquee_panel" data-image="assets/images/phone_5">
-				<h3>See the results</h3>
-				<p>Players are ranked at the end of every episode. Earn points & badges, share the results, and shame your friends!</p> 
-				<a class="cta">Play Demo</a>
-			</div>
-			</div>
+  <div>
+  <h1 hidden id="placeholder">Watch Netflix. Answer real-time trivia. <span class="guru">Are you the Plot Guru?</span></h1>
+  </div> 
+        <div hidden class='flex subs'>
+            <p>Join our early sign up list and we'll give you every in-app purchase for free, forever! <span class="oct">Coming November 2.</span></p>
+            <img class="iconarrow" src="assets/icon_arrow.png" />
+            <form id="form1" action="//plotguru.us10.list-manage.com/subscribe/post?u=767096bf5a3acafa6124884f6&amp;id=75ed4171af" method="post" name="presignup" target="_blank"> 
+			<input id="email" class="email" type="email" name="EMAIL" value="Email Address" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+			<input class="btns" id="submit" type="submit" name="subscribe" value="Join List"></form>
 		</div>
+		<img class="phone_mockup" src="assets/phone_guru_mockup.png" />  
 </section>
 	    <section class="mask"></section> 
 		<section class="downBar"> 
@@ -108,30 +88,59 @@
 				<div class="stone2"></div>
 			</div>
 			<div class="intros introShow"> 
-			    <div class="mockup1">  
+			    <div class="mockup1"> 
+				<img alt="players" src="assets/phone_players.png" />
 				</div>
 				<div class="intro_text">
-					<h2>Featured</h2> 
+					<h2>1. Gather your friends.</h2>
+					<p>And find a couch! If you have no friends, we made a single-player mode just for you.</p>
 				</div>
-				<div class="featured">
-					<a href="http://www.businessinsider.com/netflix-plot-guru-app-for-predicting-plot-twists-on-tv-2015-8" target="_blank"><img alt="BI" src="./assets/award_bi.png"></a>
-					<a href="https://www.producthunt.com/tech/plot-guru" target="_blank"><img alt="Product Hunt" src="./assets/award_phunt.png"></a>
-					<a href="http://www.popsci.com/plot-guru-is-trivia-app-that-wants-to-become-your-ultimate-netflix-sidekick" target="_blank"><img alt="Popsci" src="./assets/award_popsci.png"></a>
-					<br>
-					<a href="http://www.thedrum.com/news/2015/09/09/make-predictions-while-watching-netflix-plot-guru" target="_blank"><img alt="The Drum" src="./assets/award_thedrum.png"></a>
-					<a href="https://www.mccombs.utexas.edu/Centers/Texas-Venture-Labs/TVL-Scholarship" target="_blank"><img alt="Texas Venture Labs" src="./assets/award_tvl.png"></a>
-					<a href="http://www.builtinaustin.com/2015/11/02/plot-guru-pits-you-against-your-friends-streaming-tv-trivia" target="_blank"><img alt="Built in Austin" src="./assets/award_built.png"></a>
+			</div> 
+			<div class="intros introShow"> 
+			    <div class="mockup1"> 
+				<img alt="shows" src="assets/phone_selectashow.png" />
 				</div>
-			</div>  
+				<div class="intro_text">
+					<h2>2. Select a show.</h2>
+					<p>We're launching with over 20 of the most popular titles on Netflix right now.</p>
+				</div>
+			</div> 
+			<div class="intros introShow"> 
+			    <div class="mockup1"> 
+				<img alt="questions" src="assets/phone_question.png" />
+				</div>
+				<div class="intro_text">
+					<h2>3. Answer questions.</h2>
+					<p>The app syncs up with the show you're watching, sending out questions while the episode is playing. Make your best predictions!</p>
+				</div>
+			</div> 
+			<div class="intros introShow"> 
+			    <div class="mockup1"> 
+				<img alt="trivia" src="assets/phone_trivia.png" />
+				</div>
+				<div class="intro_text">
+					<h2>4. Receive trivia.</h2>
+					<p>In addition to receiving questions, you'll also get occasional pieces of trivia that relate to what's happening on-screen.</p>
+				</div>
+			</div> 
+			<div id="lastIntro" class="intros introShow"> 
+			    <div class="mockup1"> 
+				<img alt="results" src="assets/phone_results.png" />
+				</div>
+				<div class="intro_text">
+					<h2>5. See the results.</h2>
+					<p>At the end of every episode, each player is ranked. Earn points & badges, share the results, and shame your friends!</p>
+				</div>
+			</div> 
 			<div class="intros guru_icon"></div>
 		  </section>	
 		</artical>
 		<section class="ltIE9">Please update your browser<br>to enjoy Plot Guru.</section>
 		<footer class="join">
-			<p>Android User?</p>
+			<p>Well, what do you think?</p>
 			<div class="blur_bottom">
             <div class='flex subs'>
-            <p id="bp">Join our early sign up list to be the first to get the Android Version!</p>
+            <p id="bp">Join our early sign up list to get the app for free!</p>
             <form action="//plotguru.us10.list-manage.com/subscribe/post?u=767096bf5a3acafa6124884f6&amp;id=75ed4171af" method="post" name="presignup2" target="_blank"> 
 			<input id="email2" class="email" type="email" name="EMAIL" value="Email Address" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
 			<input class="btns" id="submit2" type="submit" name="subscribe" value="Join List"></form>
@@ -146,7 +155,8 @@
 		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga'); 
 			  ga('create', 'UA-38451886-3', 'auto');
 			  ga('send', 'pageview');
-    </script>  
+    </script>
+	<script src="js/jquery-1.10.1.min.js"></script> 
 	<script src="js/pro.js"></script> 
 	<script src="js/script.js"></script>    
 	<script type="text/javascript">
