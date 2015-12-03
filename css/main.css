@@ -1370,6 +1370,9 @@ transition-property: none;
     width: 100px;
     height: 100px;
 }
+.featured {
+    opacity: 1;
+}
 }
 @media screen and (max-width: 600px) {
 #twitter, #fb, #ins { 
@@ -1394,6 +1397,10 @@ transition-property: none;
 }
 }
 @media screen and (max-width: 578px) { 
+body {
+overflow: scroll; 
+-webkit-overflow-scrolling: touch;
+}
 .featured img {
     width: 80px;
     height: 80px;
