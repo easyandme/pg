@@ -1399,6 +1399,7 @@ transition-property: none;
 @media screen and (max-width: 578px) { 
 body {
 overflow: scroll; 
+overflow-x: hidden;
 -webkit-overflow-scrolling: touch;
 }
 .featured img {
