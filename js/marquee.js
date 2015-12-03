@@ -1,7 +1,7 @@
 var marqueeVars = {
 		screenSize: '',
 		width: 0,
-		mobileSize: 600,
+		mobileSize: 800,
 		autoPlay: true,
 		currentPanel: 1,
 		totalPanels: 0,
@@ -139,28 +139,11 @@ function marqueeMultiPanel() {
 	$('.marquee_nav div:first').trigger('click');
 }
 
-function marqueeSinglePanel() { 
-/*	$('.marquee').html('').append('<div class="marquee_stage_small"><div class="btn prev"></div><div class="btn next"></div>'+marqueeVars.panelContent[0]+'</div>');
-    var panel_image_s = $('.marquee .marquee_stage_small .marquee_panel').attr('data-image-s');
-    $('marquee .marquee_stage_small .marquee_panel').css('background-image','url('+panel_image_s+')');
-    $('.marquee .marquee_panel .panel_caption a.cta').text('Next').on('click', function() {
-    	if (!marqueeVars.inTransition) {
-    		if ($('.marquee .btn').hasClass('prev')) {
-                marqueeVars.currentPanel -= 1;
-                if (marqueeVars.currentPanel < 1) {
-                    marqueeVars.currentPanel = marqueeVars.totalPanels
-                }
-    		} else {
-                marqueeVars.currentPanel += 1;
-               if (marqueeVars.currentPanel > marqueeVars.totalPanels) {
-                    marqueeVars.currentPanel = 1;
-                }
-    		} 
-    		$('.marquee_nav div:nth-child(' + marqueeVars.currentPanel + ')').trigger('click');
-    	}
-    });*/ 
+function marqueeSinglePanel() {  
     marqueeVars.timePassed = 0;
+    if (!marqueeVars.inTransition) {
 	marqueeVars.autoPlay = false;
+};
 	var newHTML = '<div class="marquee_stage_large"><div class="marquee_container_1"></div><div class="marquee_nav"></div><div class="btn prev"></div><div class="btn next"></div></div>';
 
 	$('.marquee').html('').append(newHTML);
@@ -192,7 +175,7 @@ function marqueeSinglePanel() {
     		$('.marquee_nav div:nth-child(' + marqueeVars.currentPanel + ')').trigger('click');
     	}
     });*/
-   $('body').on('click', '.marquee .marquee_panel .panel_caption a.cta', function(){ 
+   $(document).on('click', '.marquee .marquee_panel .panel_caption a.cta', function(){ 
    	if (!marqueeVars.inTransition) {
 			   marqueeVars.currentPanel += 1;
                if (marqueeVars.currentPanel > marqueeVars.totalPanels) {
