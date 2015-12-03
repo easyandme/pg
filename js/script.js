@@ -54,7 +54,7 @@ if ($(this).scrollTop() > 900 && $(window).scrollTop() + $(window).height() !== 
  }
 });
 } else { 
-  $('header').css({'opacity':1,'display':'none'});
+  $('header').css({'opacity':1,'display':'block'});
   $(window).scroll(function() { 
 if ($(this).scrollTop() > 400 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
   $('header').fadeIn();

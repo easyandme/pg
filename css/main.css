@@ -1353,7 +1353,7 @@ transition-property: none;
     } 
     body {
     background-color: #e2284e;
-    }
+    } 
     .marquee .overlay {display: none;}
     .marquee .marquee_panel {
         background-position: 50% 75%;
@@ -1372,7 +1372,7 @@ transition-property: none;
 }
 .featured {
     opacity: 1;
-}
+} 
 }
 @media screen and (max-width: 600px) {
 #twitter, #fb, #ins { 
