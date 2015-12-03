@@ -49,7 +49,7 @@ if ($(this).scrollTop() > 50 && $(window).scrollTop() + $(window).height() !== $
  // if ($('header').hasClass('fadeOutUp')) {$('header').removeClass('animated fadeOutUp')};
   //$('header').addClass('animated fadeInDown');
 } 
-if ($(this).scrollTop() > 1000 && $(window).scrollTop() + $(window).height() !== $(document).height()) { 
+if ($(this).scrollTop() > 900 && $(window).scrollTop() + $(window).height() !== $(document).height()) { 
    $('.featured').addClass('zoomIn animated').css('opacity', '1');
  }
 });
