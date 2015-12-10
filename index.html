@@ -41,7 +41,21 @@
 			     		     <a id="ins" class="navs social" href="http://instagram.com/plot.guru/"></a>
 			     		     <button id="menu" class="navs" href="#"></button>
 	     		</nav> 
-	    </header>    
+	    </header> 
+<section class="content2">    
+       <div class="mockup2">
+       	 <img alt="screenshot" src="./assets/screen_1.jpg" />
+       </div>
+       <div class="slogan">
+       	   <img width="120" alt="logo" src="./assets/logo_icon_guru.png" />
+       	   <img width="240" alt="wordmark" src="./assets/plot_guru_official_wordmark_white.png" />
+       	   <h1 class="slogan_text">Answer real-time trivia<br>while watching Netflix.</h1>
+       	   <a id="download" href="https://itunes.apple.com/app/id964629606"><img width="240" alt="download" src="./assets/img_button_appstore.png" /></a>
+       </div>
+</section>	   
+	    <section class="mask2"></section> 
+		<section class="downbar2"></section>   
+<div class="wrapper">	      
 <section class="content">  
   <div class="marquee">
 			<div class="marquee_data">
@@ -135,7 +149,7 @@
 		</artical>
 		<section class="ltIE9">Please update your browser<br>to enjoy Plot Guru.</section>
 		<footer class="join">
-		<a id="download" href="https://itunes.apple.com/app/id964629606"><img width="240" alt="download" src="./assets/img_button_appstore.png"></a>
+		<a id="download" href="https://itunes.apple.com/app/id964629606"><img width="240" alt="download2" src="./assets/img_button_appstore.png"></a>
 			<p>Android User?</p>
 			<div class="blur_bottom">
             <div class='flex subs'>
@@ -147,6 +161,7 @@
 		    </div> 
 		</footer>
         <div class="stt"></div> 
+</div>        
     <script async>
 		 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -168,6 +183,16 @@
 			$('body').on('click', '#submit2', function() {
 			  ga('send', 'event', 'button', 'subscribe', 'Subscribe_via_footer');
 			});
+			var n = 1;
+		setInterval(function() {
+			n += 1;
+			$('.mockup2>img').fadeOut(500); 
+			setTimeout(function() {
+			$('.mockup2>img').fadeIn(500).attr('src', './assets/screen_' + n + '.jpg') 
+			}, 500);
+			if (n >= 6) {n = 1};
+		}, 7700);
+
 	});
 </script>
 </body>

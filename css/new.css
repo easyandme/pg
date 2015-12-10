@@ -73,7 +73,7 @@ a.btn {
     background-color: #e2284e;
     overflow: hidden;
 }
-.no-boxshadow .container, .no-boxshadow .ltIE9 {
+.no-boxshadow .container2, .no-boxshadow .ltIE9 {
     display: block;
 }
 .no-boxshadow .content, .no-boxshadow .wide, .no-boxshadow .join, .no-boxshadow .downBar, .no-boxshadow .connect, .no-boxshadow .row {
@@ -90,7 +90,7 @@ header {
 header > nav > div {
     display: inline;
 } 
-.content { 
+.content2 { 
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;   
@@ -105,7 +105,7 @@ header > nav > div {
     height: 100%;
     background-color: #e53659;  
 } 
-.downbar {
+.downbar2 {
     position: absolute;
     bottom: 0;
     height: 104px;
@@ -121,7 +121,7 @@ header > nav > div {
     left: 10%;
     color: #fff;
  }
- .mockup {
+ .mockup2 {
     position: relative;
     background: url(../assets/image_iphone6.png) center center no-repeat; 
     width: 20em;
@@ -134,7 +134,7 @@ header > nav > div {
     margin: 0 0 8px -90px;
     background-position: bottom;
  }
- .mockup > img {
+ .mockup2 > img {
     width: 14.2em;
     height: 25.3em;
     position: absolute;  
@@ -176,7 +176,7 @@ header > nav > div {
     padding-right: 4px;
     margin-right: 4px;
  }
- .navbar {
+ .navbar2 {
     position: absolute;
     bottom: 5px;
     right: 15px;
@@ -187,7 +187,7 @@ header > nav > div {
     text-align: right; 
     font-family: AvenirHeavy, ralewaybold;
  }
- .navbar button {
+ .navbar2 button {
     border-style: none;
     border-radius: 5px;
     width: 170px;
@@ -402,18 +402,14 @@ header > nav > div {
     body {
         height: 200%;
     }
-    .content { 
+    .content2 { 
     flex-flow: column;
     -ms-flex-flow: column;
     -webkit-flex-flow: column;
     align-items: center;
     -webkit-align-items: center;
     -webkit-box-align: center; 
-    }
-    header {
-    height: 0;
-    bottom: 0;      
-    }
+    } 
     .slogan {
     width: 240px;
     margin-left: 0;
@@ -426,7 +422,7 @@ header > nav > div {
     font-size: 18px;
     word-spacing: 0;
     }
-    .mockup { 
+    .mockup2 { 
     -webkit-order: 2;
     -ms-order: 2;
     order: 2;
@@ -452,7 +448,7 @@ header > nav > div {
     img[alt="wordmark"] { 
     width: 190px;
     }
-    .downbar {
+    .downbar2 {
         z-index: 999;
     }
     .navs {

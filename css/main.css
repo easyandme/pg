@@ -65,13 +65,21 @@ a.btn {
     display: none;
 }
 
+.wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+}
+
 header {
 	height: 3.5em;
     background-color: #e2284e;
     width: 100%; 
-    z-index: 151;
+    z-index: 1001;
     position: fixed;
     top: 0;
+    opacity: 0;
 } 
 form {
     display: flex;
@@ -805,7 +813,7 @@ p.progressbar-text {
     -webkit-transform: translateY(-50%);
 }
 .intros button + p {
-    position: absolute;
+    position: absolute; 
     bottom: 18%;
     color: #fff;
     width: 61%;
@@ -852,7 +860,6 @@ p.progressbar-text {
     margin-right: auto;
     margin-top: 120px;
     text-align: center;
-    display: table-cell;  
     opacity: 0;
 }
 .featured img {
@@ -897,7 +904,7 @@ p.progressbar-text {
 	position: absolute;
 	width: 100%;
 	height: 500px;
-	background-color: #e53659;
+	background-color: #E2284E;
     display: flex;
     display: -ms-flexbox;
     display: -webkit-flex;  
@@ -920,6 +927,11 @@ p.progressbar-text {
     font-family: ralewayextrabold, raleway;
 }
 img[alt="download"] {
+    position: relative;
+    display: table;
+    margin: 42px auto auto;
+}
+img[alt="download2"] {
     margin-top: 40px;
 }
 #submit { 
@@ -950,6 +962,84 @@ img[alt="download"] {
     font-family: ralewaymedium;
     display: none;
 }
+
+.content2 { 
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;   
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    -webkit-align-items: flex-end;
+    -webkit-box-align: end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    background-color: #E2284E;  
+} 
+.downbar2 {
+    position: absolute;
+    bottom: 0;
+    height: 104px;
+    background-color: #fff;
+    width: 100%;
+} 
+.ltIE9 {
+    display: none;
+    font-family: ralewayextrabold;
+    font-size: 3em;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    color: #fff;
+ }
+ .mockup2 {
+    position: relative;
+    background: url(../assets/image_iphone6.png) center center no-repeat; 
+    width: 20em;
+    height: 100%;
+    z-index: 999;
+    background-size: 18em;
+    display: flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    margin: 0 0 8px -90px;
+    background-position: bottom;
+ }
+ .mockup2 > img {
+    width: 13em;
+    height: 23em;
+    position: absolute;
+    bottom: 101px;
+    left: 53%;
+    margin-left: -7.18em;
+} 
+ .slogan { 
+    width: 240px;
+    height: 536px; 
+    margin-left: 30px;
+ }
+ img[alt="logo"] { 
+    display: table;
+    position: relative;
+    margin: 0 auto auto;
+ }
+ img[alt="wordmark"] { 
+    position: relative;
+    display: table;
+    margin: 15px auto auto;
+ }
+ .slogan_text {
+    text-align: center;
+    font-size: 21px;
+    word-spacing: 0;
+    font-family: AvenirHeavy, ralewaybold;
+    color: #fff;
+    margin-top: 20px;
+    line-height: 1.3em;
+ } 
+
 @media only screen and (max-width: 1020) {
 .intro {
   height: 700px
@@ -1350,10 +1440,7 @@ transition-property: none;
 }
     .marquee .marquee_panel .panel_caption a.cta  {
         padding: 8px 30px; 
-    } 
-    body {
-    background-color: #e2284e;
-    } 
+    }  
     .marquee .overlay {display: none;}
     .marquee .marquee_panel {
         background-position: 50% 75%;
@@ -1413,3 +1500,120 @@ overflow-x: hidden;
     visibility: hidden;
 } 
 }
+
+
+@media screen and (max-width: 700px) {
+    body {
+    overflow: scroll; 
+    overflow-x:hidden; 
+    -webkit-overflow-scrolling: touch;
+    }
+    .mockup2 {
+        display: none;
+    }
+    header {
+        display: none;
+    }
+    .wrapper { 
+    }
+    .content2 { 
+    flex-flow: column;
+    -ms-flex-flow: column;
+    -webkit-flex-flow: column;
+    align-items: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center; 
+    } 
+    .slogan {
+    width: 240px;
+    margin-left: 0;
+    -webkit-order: 1;
+    -ms-order: 1;
+    order: 1; 
+    margin-top: 6em;
+    }
+    .slogan_text {
+    font-size: 18px;
+    word-spacing: 0;
+    }
+    .mockup2 { 
+    -webkit-order: 2;
+    -ms-order: 2;
+    order: 2;
+    margin: 0 auto;
+    transform: translateY(-10%);
+    -webkit-transform: translateY(-10%);
+        background-color: #fff;
+    height: 87%;
+    width: 100%; 
+    background-position-y: 46px;
+    }
+    .mockup > img {  
+        top: 113px;
+        bottom: 0;
+    }
+    img[alt="logo"] {
+    margin: -70px auto auto;
+    }
+    img[alt="download"] { 
+    width: 190px;
+    margin: 30px auto auto;
+    }
+    img[alt="wordmark"] { 
+    width: 190px;
+    }
+    .downbar2 {
+        z-index: 999;
+    }
+    .navs {
+    padding-right: 0;
+    }
+    .navbar {
+    right: 0;  
+    text-align: center;
+    padding-right: 0;
+    font-size: 14px;
+    bottom: 28px;
+    }
+    .social {
+    margin-top: -40px;
+    }
+    #twitter {
+    margin-left: -3px;
+    }
+    #fb {
+    margin-left: 47px;
+    }
+    #ins {
+    margin-left: 97px;
+    } 
+    header > nav > div {
+    width: 0;
+    position: absolute;
+    height: 100%;
+        left: 50%;
+    margin-left: -66px;
+    text-align: center;
+    bottom: 0;
+    }
+    #android, #form1 {
+    margin-bottom: 20px;
+    }
+    #android {
+    width: 190px;
+    display: inline-block;
+    font-size: 1.25em;
+    background-position: 8px;
+    }
+    #info {
+    width: 190px;
+    font-size: 1.25em;
+    }
+    #submit {
+    padding: 8px;
+    }
+    #email {
+    height: 26px;
+    } 
+}
+

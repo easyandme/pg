@@ -27,37 +27,30 @@ videoPlayed = 1;
 } else {window.location.reload()} 
 });
 
-if (screen.width > 1024) {
-      var x = 0;
-$(window).scroll(function() {  
-      if ($(this).scrollTop() >= 200) {
-        $('.phone_mockup').addClass('animated slideOutDown');
-        x = 1;
-      } 
-      if (x == 1 && $(this).scrollTop() < 200) {
-        $('.phone_mockup').removeClass('animated slideOutDown').addClass('animated slideInUp');
-        x = 0;
+if (screen.width > 700) {
+$(window).scroll(function() {   
+      if ($(this).scrollTop() < 400) {  
+        if ($('header').hasClass('fadeInDown')) {$('header').addClass('animated fadeOutUp');}
       }
-});
-} else if (screen.width < 375) {
-  $('#submit, #submit2').attr('value', 'join');
-}
+}) 
+};
 if (screen.width > 800) {
 $(window).scroll(function() { 
-if ($(this).scrollTop() > 50 && $(window).scrollTop() + $(window).height() !== $(document).height()) { 
+  if ($(this).scrollTop() > 400 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
+  if ($('header').hasClass('fadeOutUp')) {$('header').removeClass('animated fadeOutUp')};
+  $('header').addClass('animated fadeInDown'); 
+ } 
+  if ($(this).scrollTop() > 800 && $(window).scrollTop() + $(window).height() !== $(document).height()) { 
   $('.intros:first-child').addClass('zoomInDown animated').css('opacity', '1');
- // if ($('header').hasClass('fadeOutUp')) {$('header').removeClass('animated fadeOutUp')};
-  //$('header').addClass('animated fadeInDown');
 } 
-if ($(this).scrollTop() > 900 && $(window).scrollTop() + $(window).height() !== $(document).height()) { 
+if ($(this).scrollTop() > 1500 && $(window).scrollTop() + $(window).height() !== $(document).height()) { 
    $('.featured').addClass('zoomIn animated').css('opacity', '1');
  }
 });
-} else { 
-  $('header').css({'opacity':1,'display':'block'});
+} else {  
   $(window).scroll(function() { 
 if ($(this).scrollTop() > 400 && $(window).scrollTop() + $(window).height() !== $(document).height()) {
-  $('header').fadeIn();
+  $('header').css('opacity','1').fadeIn();
 } else {
   $('header').fadeOut();
 }
